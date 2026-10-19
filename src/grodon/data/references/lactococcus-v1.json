@@ -1,0 +1,1409 @@
+{
+  "schema_version": 1,
+  "name": "lactococcus-v1",
+  "version": "1",
+  "kind": "bundled",
+  "database": "NCBI RefSeq",
+  "retrieved_utc": "2026-10-19T09:52:23.679774+00:00",
+  "reference_count": 88,
+  "scope": "Lactococcus only: original CIRM-BIA2698 R/Python validation snapshot from MG1363, IL1403, and CIRM-BIA2553. Do not use as a universal bacterial reference.",
+  "selection": "Canonical 30S/50S ribosomal protein L/S number descriptions ending at organism bracket, including type B/Z prefixes. Ribosome-associated enzymes are excluded.",
+  "attribution": "NCBI RefSeq and the contributing genome projects",
+  "license_url": "https://www.ncbi.nlm.nih.gov/home/about/policies/",
+  "license_note": "NCBI makes sequence data available for public use; its disclaimer notes that submitters may assert intellectual-property rights. See source policy.",
+  "original_provenance": {
+    "created_utc": "2026-10-19T09:52:23.679774+00:00",
+    "purpose": "Reference proteins for homology annotation only; query genes must come from the user's exact assembly.",
+    "selection": "Canonical 30S/50S ribosomal protein L/S number descriptions ending at organism bracket, including type B/Z prefixes. Ribosome-associated enzymes are excluded.",
+    "unique_reference_records": 88,
+    "ribosomal_families": {
+      "L36": 1,
+      "L33": 4,
+      "L28": 1,
+      "S21": 1,
+      "S12": 1,
+      "S7": 1,
+      "L30": 1,
+      "S14": 2,
+      "L5": 1,
+      "L24": 1,
+      "L14": 1,
+      "S17": 1,
+      "L29": 1,
+      "S3": 2,
+      "S10": 1,
+      "S13": 1,
+      "L17": 1,
+      "L21": 2,
+      "L27": 2,
+      "L34": 1,
+      "S18": 1,
+      "S1": 1,
+      "S9": 1,
+      "L32": 1,
+      "S15": 2,
+      "S11": 1,
+      "L22": 1,
+      "S4": 2,
+      "L19": 2,
+      "L7/L12": 2,
+      "L10": 2,
+      "L31": 2,
+      "S20": 2,
+      "L35": 2,
+      "L1": 2,
+      "L11": 2,
+      "L15": 2,
+      "L18": 2,
+      "S8": 3,
+      "L16": 2,
+      "S19": 2,
+      "L2": 2,
+      "S6": 2,
+      "S16": 2,
+      "L9": 2,
+      "L20": 2,
+      "S5": 2,
+      "L6": 2,
+      "L23": 2,
+      "L4": 2,
+      "L3": 2,
+      "S2": 2,
+      "L13": 2
+    },
+    "reference_fasta_sha256": "075848596f8e2f356d8c6ad244cc24ab27ea376a5305b32a59f790e029bb8d80",
+    "sources": [
+      {
+        "assembly_accession": "GCF_000009425.1",
+        "label": "Lactococcus cremoris MG1363",
+        "organism_name": "Lactococcus cremoris subsp. cremoris MG1363",
+        "assembly_level": "Complete Genome",
+        "annotation": {
+          "name": "GCF_000009425.1-RS_2024_09_17",
+          "provider": "NCBI RefSeq",
+          "release_date": "2024-09-17",
+          "stats": {
+            "gene_counts": {
+              "total": 2590,
+              "protein_coding": 2386,
+              "non_coding": 86,
+              "pseudogene": 118
+            }
+          },
+          "method": "Best-placed reference protein set; GeneMarkS-2+",
+          "pipeline": "NCBI Prokaryotic Genome Annotation Pipeline (PGAP)",
+          "software_version": "6.8"
+        },
+        "protein_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/009/425/GCF_000009425.1_ASM942v1/GCF_000009425.1_ASM942v1_protein.faa.gz",
+        "dataset_report_url": "https://api.ncbi.nlm.nih.gov/datasets/v2/genome/accession/GCF_000009425.1/dataset_report",
+        "protein_sha256": "d3df2fffcdc201dbd1e4cd7416db4471f9fd62936fa9122441dbe99715629ca4",
+        "protein_records": 2359,
+        "selected_ribosomal_records": 55,
+        "selected_accessions": [
+          "WP_001808836.1",
+          "WP_003129585.1",
+          "WP_003129776.1",
+          "WP_003129844.1",
+          "WP_003129874.1",
+          "WP_003129876.1",
+          "WP_003129921.1",
+          "WP_003129946.1",
+          "WP_003129948.1",
+          "WP_003129951.1",
+          "WP_003129953.1",
+          "WP_003129955.1",
+          "WP_003129957.1",
+          "WP_003129960.1",
+          "WP_003129973.1",
+          "WP_003130555.1",
+          "WP_003130558.1",
+          "WP_003130644.1",
+          "WP_003130646.1",
+          "WP_003131818.1",
+          "WP_003131952.1",
+          "WP_003132258.1",
+          "WP_003132594.1",
+          "WP_004254378.1",
+          "WP_010905107.1",
+          "WP_010906184.1",
+          "WP_010906297.1",
+          "WP_010906302.1",
+          "WP_011675319.1",
+          "WP_011675838.1",
+          "WP_011676194.1",
+          "WP_011676195.1",
+          "WP_011676633.1",
+          "WP_011676734.1",
+          "WP_011676854.1",
+          "WP_011677073.1",
+          "WP_011677074.1",
+          "WP_011677151.1",
+          "WP_011677153.1",
+          "WP_011677155.1",
+          "WP_011677158.1",
+          "WP_011677159.1",
+          "WP_011677160.1",
+          "WP_011677168.1",
+          "WP_011677242.1",
+          "WP_011834878.1",
+          "WP_011835586.1",
+          "WP_011835750.1",
+          "WP_011836022.1",
+          "WP_011836023.1",
+          "WP_011836026.1",
+          "WP_011836027.1",
+          "WP_011836028.1",
+          "WP_011836067.1",
+          "WP_011836164.1"
+        ],
+        "excluded_ribosomal_related_descriptions": [
+          "WP_011675346.1 MULTISPECIES: ribosomal protein S18-alanine N-acetyltransferase [Lactococcus]",
+          "WP_011676089.1 MULTISPECIES: ribosomal-processing cysteine protease Prp [Lactococcus]",
+          "WP_011834209.1 50S ribosomal protein L11 methyltransferase [Lactococcus cremoris]",
+          "WP_011834373.1 ribosomal protein S18-alanine N-acetyltransferase [Lactococcus cremoris]",
+          "WP_011834797.1 ribosomal-processing cysteine protease Prp [Lactococcus cremoris]",
+          "WP_011835460.1 ribosomal protection-like ABC-F family protein [Lactococcus cremoris]"
+        ]
+      },
+      {
+        "assembly_accession": "GCF_000006865.1",
+        "label": "Lactococcus lactis IL1403",
+        "organism_name": "Lactococcus lactis subsp. lactis Il1403",
+        "assembly_level": "Complete Genome",
+        "annotation": {
+          "name": "NCBI Prokaryotic Genome Annotation Pipeline (PGAP)",
+          "provider": "NCBI RefSeq",
+          "release_date": "2023-11-21",
+          "stats": {
+            "gene_counts": {
+              "total": 2415,
+              "protein_coding": 2258,
+              "non_coding": 86,
+              "pseudogene": 71
+            }
+          },
+          "method": "Best-placed reference protein set; GeneMarkS-2+",
+          "pipeline": "NCBI Prokaryotic Genome Annotation Pipeline (PGAP)",
+          "software_version": "6.6"
+        },
+        "protein_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/006/865/GCF_000006865.1_ASM686v1/GCF_000006865.1_ASM686v1_protein.faa.gz",
+        "dataset_report_url": "https://api.ncbi.nlm.nih.gov/datasets/v2/genome/accession/GCF_000006865.1/dataset_report",
+        "protein_sha256": "4d6e02160d2ba312e664a09b5d9106aac3b06b7d8d1ae18b738267fe33b2d157",
+        "protein_records": 2230,
+        "selected_ribosomal_records": 56,
+        "selected_accessions": [
+          "WP_001808836.1",
+          "WP_003129585.1",
+          "WP_003129776.1",
+          "WP_003129844.1",
+          "WP_003129874.1",
+          "WP_003129876.1",
+          "WP_003129920.1",
+          "WP_003129921.1",
+          "WP_003129922.1",
+          "WP_003129924.1",
+          "WP_003129925.1",
+          "WP_003129946.1",
+          "WP_003129948.1",
+          "WP_003129951.1",
+          "WP_003129953.1",
+          "WP_003129955.1",
+          "WP_003129957.1",
+          "WP_003129958.1",
+          "WP_003129963.1",
+          "WP_003129965.1",
+          "WP_003129966.1",
+          "WP_003129968.1",
+          "WP_003129970.1",
+          "WP_003129973.1",
+          "WP_003130213.1",
+          "WP_003130214.1",
+          "WP_003130555.1",
+          "WP_003130558.1",
+          "WP_003130711.1",
+          "WP_003130760.1",
+          "WP_003131818.1",
+          "WP_003131952.1",
+          "WP_003131954.1",
+          "WP_003132258.1",
+          "WP_003132352.1",
+          "WP_003132353.1",
+          "WP_003132464.1",
+          "WP_003132594.1",
+          "WP_004254378.1",
+          "WP_004254643.1",
+          "WP_004254644.1",
+          "WP_004255752.1",
+          "WP_010905107.1",
+          "WP_010905608.1",
+          "WP_010905746.1",
+          "WP_010905747.1",
+          "WP_010906113.1",
+          "WP_010906184.1",
+          "WP_010906297.1",
+          "WP_010906299.1",
+          "WP_010906301.1",
+          "WP_010906302.1",
+          "WP_010906305.1",
+          "WP_010906340.1",
+          "WP_010906417.1",
+          "WP_012897519.1"
+        ],
+        "excluded_ribosomal_related_descriptions": [
+          "WP_003130645.1 MULTISPECIES: ribosomal-processing cysteine protease Prp [Lactococcus]",
+          "WP_010905116.1 MULTISPECIES: 50S ribosomal protein L11 methyltransferase [Lactococcus]",
+          "WP_010905268.1 MULTISPECIES: ribosomal protein S18-alanine N-acetyltransferase [Bacilli]",
+          "WP_010905269.1 ribosomal protein S18-alanine N-acetyltransferase [Lactococcus lactis]",
+          "WP_010905615.1 ribosomal protection-like ABC-F family protein [Lactococcus lactis]",
+          "WP_010905735.1 ribosomal protection-like ABC-F family protein [Lactococcus lactis]"
+        ]
+      },
+      {
+        "assembly_accession": "GCF_964062975.1",
+        "label": "Lactococcus lactis CIRM-BIA2553",
+        "organism_name": "Lactococcus lactis",
+        "assembly_level": "Complete Genome",
+        "annotation": {
+          "name": "GCF_964062975.1-RS_2024_07_20",
+          "provider": "NCBI RefSeq",
+          "release_date": "2024-07-20",
+          "stats": {
+            "gene_counts": {
+              "total": 2386,
+              "protein_coding": 2264,
+              "non_coding": 89,
+              "pseudogene": 33
+            }
+          },
+          "method": "Best-placed reference protein set; GeneMarkS-2+",
+          "pipeline": "NCBI Prokaryotic Genome Annotation Pipeline (PGAP)",
+          "software_version": "6.7"
+        },
+        "protein_url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/964/062/975/GCF_964062975.1_Lactococcus_lactis_CIRM-BIA2553/GCF_964062975.1_Lactococcus_lactis_CIRM-BIA2553_protein.faa.gz",
+        "dataset_report_url": "https://api.ncbi.nlm.nih.gov/datasets/v2/genome/accession/GCF_964062975.1/dataset_report",
+        "protein_sha256": "0b6c035414d886dc7a82b58bbd8d8e095bb2209bd7977d23dbfe589f62706885",
+        "protein_records": 2262,
+        "selected_ribosomal_records": 56,
+        "selected_accessions": [
+          "WP_001808836.1",
+          "WP_003129585.1",
+          "WP_003129776.1",
+          "WP_003129844.1",
+          "WP_003129874.1",
+          "WP_003129876.1",
+          "WP_003129920.1",
+          "WP_003129921.1",
+          "WP_003129922.1",
+          "WP_003129924.1",
+          "WP_003129925.1",
+          "WP_003129932.1",
+          "WP_003129946.1",
+          "WP_003129948.1",
+          "WP_003129951.1",
+          "WP_003129953.1",
+          "WP_003129955.1",
+          "WP_003129957.1",
+          "WP_003129958.1",
+          "WP_003129960.1",
+          "WP_003129963.1",
+          "WP_003129965.1",
+          "WP_003129966.1",
+          "WP_003129968.1",
+          "WP_003129970.1",
+          "WP_003129973.1",
+          "WP_003130213.1",
+          "WP_003130214.1",
+          "WP_003130555.1",
+          "WP_003130558.1",
+          "WP_003130644.1",
+          "WP_003130646.1",
+          "WP_003130711.1",
+          "WP_003130760.1",
+          "WP_003131818.1",
+          "WP_003131952.1",
+          "WP_003131954.1",
+          "WP_003132258.1",
+          "WP_003132352.1",
+          "WP_003132353.1",
+          "WP_003132464.1",
+          "WP_003132594.1",
+          "WP_004254378.1",
+          "WP_004254643.1",
+          "WP_004254644.1",
+          "WP_004255752.1",
+          "WP_010905107.1",
+          "WP_010905608.1",
+          "WP_010906113.1",
+          "WP_010906297.1",
+          "WP_010906302.1",
+          "WP_010906305.1",
+          "WP_010906340.1",
+          "WP_010906417.1",
+          "WP_012897519.1",
+          "WP_015427039.1"
+        ],
+        "excluded_ribosomal_related_descriptions": [
+          "WP_010905268.1 MULTISPECIES: ribosomal protein S18-alanine N-acetyltransferase [Lactococcus]",
+          "WP_012896947.1 MULTISPECIES: 50S ribosomal protein L11 methyltransferase [Lactococcus]",
+          "WP_012897153.1 MULTISPECIES: ribosomal protein S18-alanine N-acetyltransferase [Lactococcus]",
+          "WP_012897702.1 MULTISPECIES: ribosomal-processing cysteine protease Prp [Lactococcus]",
+          "WP_058204555.1 ribosomal protection-like ABC-F family protein [Lactococcus lactis]",
+          "WP_095586360.1 ribosomal-processing cysteine protease Prp [Lactococcus lactis]"
+        ]
+      }
+    ],
+    "references": [
+      {
+        "accession": "WP_001808836.1",
+        "description": "WP_001808836.1 MULTISPECIES: 50S ribosomal protein L36 [Bacillati]",
+        "subunit": "50S",
+        "ribosomal_protein": "L36",
+        "length_aa": 38,
+        "sequence_sha256": "cf98b13bc08210850e287f0c847c1540703ad6f273f7726b1fa8c86fc2faf52a",
+        "source_assemblies": [
+          "GCF_000009425.1",
+          "GCF_000006865.1",
+          "GCF_964062975.1"
+        ]
+      },
+      {
+        "accession": "WP_003129585.1",
+        "description": "WP_003129585.1 MULTISPECIES: 50S ribosomal protein L33 [Lactobacillales]",
+        "subunit": "50S",
+        "ribosomal_protein": "L33",
+        "length_aa": 48,
+        "sequence_sha256": "7dbc3afd7811716f93310261629deeacec9170a0c5ed92eac7b56f9c9a85528c",
+        "source_assemblies": [
+          "GCF_000009425.1",
+          "GCF_000006865.1",
+          "GCF_964062975.1"
+        ]
+      },
+      {
+        "accession": "WP_003129776.1",
+        "description": "WP_003129776.1 MULTISPECIES: 50S ribosomal protein L28 [Lactococcus]",
+        "subunit": "50S",
+        "ribosomal_protein": "L28",
+        "length_aa": 64,
+        "sequence_sha256": "da1b01f0b0c823850d345c734d30e9e54bcdc96e57f4687eb4c0687018272661",
+        "source_assemblies": [
+          "GCF_000009425.1",
+          "GCF_000006865.1",
+          "GCF_964062975.1"
+        ]
+      },
+      {
+        "accession": "WP_003129844.1",
+        "description": "WP_003129844.1 MULTISPECIES: 30S ribosomal protein S21 [Lactococcus]",
+        "subunit": "30S",
+        "ribosomal_protein": "S21",
+        "length_aa": 58,
+        "sequence_sha256": "d96822e11a2b69206c8a5c3d75edf20f80967f44c6bc192dc66cde9e6b66ad37",
+        "source_assemblies": [
+          "GCF_000009425.1",
+          "GCF_000006865.1",
+          "GCF_964062975.1"
+        ]
+      },
+      {
+        "accession": "WP_003129874.1",
+        "description": "WP_003129874.1 MULTISPECIES: 30S ribosomal protein S12 [Bacilli]",
+        "subunit": "30S",
+        "ribosomal_protein": "S12",
+        "length_aa": 137,
+        "sequence_sha256": "d599be85f423607fc35fb19ce447cbab9023d87a4923c6db95f846edbe63f6a4",
+        "source_assemblies": [
+          "GCF_000009425.1",
+          "GCF_000006865.1",
+          "GCF_964062975.1"
+        ]
+      },
+      {
+        "accession": "WP_003129876.1",
+        "description": "WP_003129876.1 MULTISPECIES: 30S ribosomal protein S7 [Bacilli]",
+        "subunit": "30S",
+        "ribosomal_protein": "S7",
+        "length_aa": 155,
+        "sequence_sha256": "1f3355d5e38521fc1b73f60346a4c1e96132d26ec187c087fff6b1185671a54d",
+        "source_assemblies": [
+          "GCF_000009425.1",
+          "GCF_000006865.1",
+          "GCF_964062975.1"
+        ]
+      },
+      {
+        "accession": "WP_003129921.1",
+        "description": "WP_003129921.1 MULTISPECIES: 50S ribosomal protein L30 [Bacilli]",
+        "subunit": "50S",
+        "ribosomal_protein": "L30",
+        "length_aa": 59,
+        "sequence_sha256": "d55985e232a3f5e1c951422864d040eaeb6d450df24f57ac645b9760cd1306a0",
+        "source_assemblies": [
+          "GCF_000009425.1",
+          "GCF_000006865.1",
+          "GCF_964062975.1"
+        ]
+      },
+      {
+        "accession": "WP_003129946.1",
+        "description": "WP_003129946.1 MULTISPECIES: type Z 30S ribosomal protein S14 [Lactococcus]",
+        "subunit": "30S",
+        "ribosomal_protein": "S14",
+        "length_aa": 61,
+        "sequence_sha256": "5f52985a6f7a24be956ba7fa4ed9250434d544e545514c8f79ad2b58becd43cf",
+        "source_assemblies": [
+          "GCF_000009425.1",
+          "GCF_000006865.1",
+          "GCF_964062975.1"
+        ]
+      },
+      {
+        "accession": "WP_003129948.1",
+        "description": "WP_003129948.1 MULTISPECIES: 50S ribosomal protein L5 [Lactococcus]",
+        "subunit": "50S",
+        "ribosomal_protein": "L5",
+        "length_aa": 180,
+        "sequence_sha256": "117b58841d7d1fdb0519f1004c83f59949f03badc667525101885efc97937949",
+        "source_assemblies": [
+          "GCF_000009425.1",
+          "GCF_000006865.1",
+          "GCF_964062975.1"
+        ]
+      },
+      {
+        "accession": "WP_003129951.1",
+        "description": "WP_003129951.1 MULTISPECIES: 50S ribosomal protein L24 [Lactococcus]",
+        "subunit": "50S",
+        "ribosomal_protein": "L24",
+        "length_aa": 101,
+        "sequence_sha256": "e68ac6f1d69f85ea903c6e97a23b56954136643a8d2d5e93474671f0c28253b4",
+        "source_assemblies": [
+          "GCF_000009425.1",
+          "GCF_000006865.1",
+          "GCF_964062975.1"
+        ]
+      },
+      {
+        "accession": "WP_003129953.1",
+        "description": "WP_003129953.1 MULTISPECIES: 50S ribosomal protein L14 [Lactococcus]",
+        "subunit": "50S",
+        "ribosomal_protein": "L14",
+        "length_aa": 122,
+        "sequence_sha256": "e30c430b7a39d45cda572ab54fee72537b3ade74aaa97d2f6ba18c76560ba7f5",
+        "source_assemblies": [
+          "GCF_000009425.1",
+          "GCF_000006865.1",
+          "GCF_964062975.1"
+        ]
+      },
+      {
+        "accession": "WP_003129955.1",
+        "description": "WP_003129955.1 MULTISPECIES: 30S ribosomal protein S17 [Lactococcus]",
+        "subunit": "30S",
+        "ribosomal_protein": "S17",
+        "length_aa": 86,
+        "sequence_sha256": "6d003b3fb2b7177f527c70232a0a07bad04d58ce1993bf1b1fcf3347d4d009ec",
+        "source_assemblies": [
+          "GCF_000009425.1",
+          "GCF_000006865.1",
+          "GCF_964062975.1"
+        ]
+      },
+      {
+        "accession": "WP_003129957.1",
+        "description": "WP_003129957.1 MULTISPECIES: 50S ribosomal protein L29 [Lactococcus]",
+        "subunit": "50S",
+        "ribosomal_protein": "L29",
+        "length_aa": 69,
+        "sequence_sha256": "31bf9badf510946103d6487c0baf07fe7c802ae9298270c116a5fc31906c1d82",
+        "source_assemblies": [
+          "GCF_000009425.1",
+          "GCF_000006865.1",
+          "GCF_964062975.1"
+        ]
+      },
+      {
+        "accession": "WP_003129960.1",
+        "description": "WP_003129960.1 MULTISPECIES: 30S ribosomal protein S3 [Lactococcus]",
+        "subunit": "30S",
+        "ribosomal_protein": "S3",
+        "length_aa": 217,
+        "sequence_sha256": "6e90517791ceecfeb8c0ea1bf43be7c90d2469fa90ecf05130bfb70a03046cda",
+        "source_assemblies": [
+          "GCF_000009425.1",
+          "GCF_964062975.1"
+        ]
+      },
+      {
+        "accession": "WP_003129973.1",
+        "description": "WP_003129973.1 MULTISPECIES: 30S ribosomal protein S10 [Lactococcus]",
+        "subunit": "30S",
+        "ribosomal_protein": "S10",
+        "length_aa": 102,
+        "sequence_sha256": "ba385ec3a9ce766ac656623fd1d76baa4222d5cb175bc77b9a992fc95a309c90",
+        "source_assemblies": [
+          "GCF_000009425.1",
+          "GCF_000006865.1",
+          "GCF_964062975.1"
+        ]
+      },
+      {
+        "accession": "WP_003130555.1",
+        "description": "WP_003130555.1 MULTISPECIES: 30S ribosomal protein S13 [Lactococcus]",
+        "subunit": "30S",
+        "ribosomal_protein": "S13",
+        "length_aa": 121,
+        "sequence_sha256": "658c24d891148d06cf4f4836bc80d783c9d6cc90ee48ac5c2884ae25c71bc606",
+        "source_assemblies": [
+          "GCF_000009425.1",
+          "GCF_000006865.1",
+          "GCF_964062975.1"
+        ]
+      },
+      {
+        "accession": "WP_003130558.1",
+        "description": "WP_003130558.1 MULTISPECIES: 50S ribosomal protein L17 [Lactococcus]",
+        "subunit": "50S",
+        "ribosomal_protein": "L17",
+        "length_aa": 126,
+        "sequence_sha256": "a8cd186f4b720ac1e96109d393787a6de314efc0f23584505c7e43ee5549b553",
+        "source_assemblies": [
+          "GCF_000009425.1",
+          "GCF_000006865.1",
+          "GCF_964062975.1"
+        ]
+      },
+      {
+        "accession": "WP_003130644.1",
+        "description": "WP_003130644.1 MULTISPECIES: 50S ribosomal protein L21 [Bacteria]",
+        "subunit": "50S",
+        "ribosomal_protein": "L21",
+        "length_aa": 104,
+        "sequence_sha256": "b55f91becbaf0c53d0d76a40ac12b80581a286c460c37a3e3cc77d39e1bf53c4",
+        "source_assemblies": [
+          "GCF_000009425.1",
+          "GCF_964062975.1"
+        ]
+      },
+      {
+        "accession": "WP_003130646.1",
+        "description": "WP_003130646.1 MULTISPECIES: 50S ribosomal protein L27 [Lactococcus]",
+        "subunit": "50S",
+        "ribosomal_protein": "L27",
+        "length_aa": 94,
+        "sequence_sha256": "d40815c6f0cd6922119663c550ed1b4476bff498e2902e9751d036f1b58a7610",
+        "source_assemblies": [
+          "GCF_000009425.1",
+          "GCF_964062975.1"
+        ]
+      },
+      {
+        "accession": "WP_003131818.1",
+        "description": "WP_003131818.1 MULTISPECIES: 50S ribosomal protein L34 [Lactococcus]",
+        "subunit": "50S",
+        "ribosomal_protein": "L34",
+        "length_aa": 44,
+        "sequence_sha256": "8996db3a5aec69130667d3adeba4ab8eddd3f0a1dba07faba16fd7600aef7b88",
+        "source_assemblies": [
+          "GCF_000009425.1",
+          "GCF_000006865.1",
+          "GCF_964062975.1"
+        ]
+      },
+      {
+        "accession": "WP_003131952.1",
+        "description": "WP_003131952.1 MULTISPECIES: 30S ribosomal protein S18 [Lactococcus]",
+        "subunit": "30S",
+        "ribosomal_protein": "S18",
+        "length_aa": 81,
+        "sequence_sha256": "3833013edc1a25a96f1bca92930910a8f1c19b58b2872530c6cc9f6a6063116a",
+        "source_assemblies": [
+          "GCF_000009425.1",
+          "GCF_000006865.1",
+          "GCF_964062975.1"
+        ]
+      },
+      {
+        "accession": "WP_003132258.1",
+        "description": "WP_003132258.1 MULTISPECIES: 50S ribosomal protein L33 [Lactococcus]",
+        "subunit": "50S",
+        "ribosomal_protein": "L33",
+        "length_aa": 49,
+        "sequence_sha256": "64d052b5f575ccf262442d9b4f0af45a6a7c0470db23d9dd42c5c4166054c9a0",
+        "source_assemblies": [
+          "GCF_000009425.1",
+          "GCF_000006865.1",
+          "GCF_964062975.1"
+        ]
+      },
+      {
+        "accession": "WP_003132594.1",
+        "description": "WP_003132594.1 MULTISPECIES: 30S ribosomal protein S1 [Lactococcus]",
+        "subunit": "30S",
+        "ribosomal_protein": "S1",
+        "length_aa": 408,
+        "sequence_sha256": "9c6a5cfc95f3138d5a216237ab9527e6c31bd6217290e4c376b29b57b73d2ea8",
+        "source_assemblies": [
+          "GCF_000009425.1",
+          "GCF_000006865.1",
+          "GCF_964062975.1"
+        ]
+      },
+      {
+        "accession": "WP_004254378.1",
+        "description": "WP_004254378.1 MULTISPECIES: 30S ribosomal protein S9 [Bacilli]",
+        "subunit": "30S",
+        "ribosomal_protein": "S9",
+        "length_aa": 130,
+        "sequence_sha256": "b2dd9c813cdd91b9fcb5eaedf0c8697f31bcafe7692e2d7fa7cec41375331947",
+        "source_assemblies": [
+          "GCF_000009425.1",
+          "GCF_000006865.1",
+          "GCF_964062975.1"
+        ]
+      },
+      {
+        "accession": "WP_010905107.1",
+        "description": "WP_010905107.1 MULTISPECIES: 50S ribosomal protein L32 [Lactococcus]",
+        "subunit": "50S",
+        "ribosomal_protein": "L32",
+        "length_aa": 57,
+        "sequence_sha256": "01eca47f336f2751ed4b6c5889c3966293b5bae83cde068553b86b40bd36e931",
+        "source_assemblies": [
+          "GCF_000009425.1",
+          "GCF_000006865.1",
+          "GCF_964062975.1"
+        ]
+      },
+      {
+        "accession": "WP_010906184.1",
+        "description": "WP_010906184.1 MULTISPECIES: 30S ribosomal protein S15 [Lactococcus]",
+        "subunit": "30S",
+        "ribosomal_protein": "S15",
+        "length_aa": 89,
+        "sequence_sha256": "486e1b5462e9f1864734def3d499fa4047b92f1b8444650c8a7ac29b376976b4",
+        "source_assemblies": [
+          "GCF_000009425.1",
+          "GCF_000006865.1"
+        ]
+      },
+      {
+        "accession": "WP_010906297.1",
+        "description": "WP_010906297.1 MULTISPECIES: 30S ribosomal protein S11 [Lactococcus]",
+        "subunit": "30S",
+        "ribosomal_protein": "S11",
+        "length_aa": 127,
+        "sequence_sha256": "e8b1990e5cd3880594adeab85d0c3d63f59cb6f5a7846a400944ef95c3513e46",
+        "source_assemblies": [
+          "GCF_000009425.1",
+          "GCF_000006865.1",
+          "GCF_964062975.1"
+        ]
+      },
+      {
+        "accession": "WP_010906302.1",
+        "description": "WP_010906302.1 MULTISPECIES: 50S ribosomal protein L22 [Lactococcus]",
+        "subunit": "50S",
+        "ribosomal_protein": "L22",
+        "length_aa": 115,
+        "sequence_sha256": "9b1a9a4b90307892a7b03138999b0b0454779ed1b3fca23c3a21c76e10c4ad25",
+        "source_assemblies": [
+          "GCF_000009425.1",
+          "GCF_000006865.1",
+          "GCF_964062975.1"
+        ]
+      },
+      {
+        "accession": "WP_011675319.1",
+        "description": "WP_011675319.1 MULTISPECIES: 30S ribosomal protein S4 [Lactococcus]",
+        "subunit": "30S",
+        "ribosomal_protein": "S4",
+        "length_aa": 203,
+        "sequence_sha256": "ae53a667697264ef430910dcb9479dc5532ec0c970b36951f540a4017b53eb3a",
+        "source_assemblies": [
+          "GCF_000009425.1"
+        ]
+      },
+      {
+        "accession": "WP_011675838.1",
+        "description": "WP_011675838.1 MULTISPECIES: 50S ribosomal protein L19 [Lactococcus]",
+        "subunit": "50S",
+        "ribosomal_protein": "L19",
+        "length_aa": 114,
+        "sequence_sha256": "1d28295e98af651c48fb08794f06095438803063d2a3e93adb3c45bffbedc599",
+        "source_assemblies": [
+          "GCF_000009425.1"
+        ]
+      },
+      {
+        "accession": "WP_011676194.1",
+        "description": "WP_011676194.1 MULTISPECIES: 50S ribosomal protein L7/L12 [Lactococcus]",
+        "subunit": "50S",
+        "ribosomal_protein": "L7/L12",
+        "length_aa": 121,
+        "sequence_sha256": "40d13f71e88c8b96b31a92938c0b8942f1819920c3d9f834cd38b2ecaec21535",
+        "source_assemblies": [
+          "GCF_000009425.1"
+        ]
+      },
+      {
+        "accession": "WP_011676195.1",
+        "description": "WP_011676195.1 MULTISPECIES: 50S ribosomal protein L10 [Lactococcus]",
+        "subunit": "50S",
+        "ribosomal_protein": "L10",
+        "length_aa": 171,
+        "sequence_sha256": "727b2a62dca3237623eeffe4002e3af190278a0dc2467a53bdb4cfd820f6dd74",
+        "source_assemblies": [
+          "GCF_000009425.1"
+        ]
+      },
+      {
+        "accession": "WP_011676633.1",
+        "description": "WP_011676633.1 MULTISPECIES: type B 50S ribosomal protein L31 [Lactococcus]",
+        "subunit": "50S",
+        "ribosomal_protein": "L31",
+        "length_aa": 81,
+        "sequence_sha256": "3e52f323ef96d324a835f8a57d43c646a3da651906ea960b388d279f1fd9e661",
+        "source_assemblies": [
+          "GCF_000009425.1"
+        ]
+      },
+      {
+        "accession": "WP_011676734.1",
+        "description": "WP_011676734.1 MULTISPECIES: 30S ribosomal protein S20 [Lactococcus]",
+        "subunit": "30S",
+        "ribosomal_protein": "S20",
+        "length_aa": 77,
+        "sequence_sha256": "21df8d4365b70f6c60df09717ac7cc5f2edaa290f6d312f575d16fb6420c7d51",
+        "source_assemblies": [
+          "GCF_000009425.1"
+        ]
+      },
+      {
+        "accession": "WP_011676854.1",
+        "description": "WP_011676854.1 MULTISPECIES: 50S ribosomal protein L35 [Lactococcus]",
+        "subunit": "50S",
+        "ribosomal_protein": "L35",
+        "length_aa": 66,
+        "sequence_sha256": "7bf1797e4f4eff2f627356e4b1e4b77e7a88357ee2462f3080bdaf5c95628c14",
+        "source_assemblies": [
+          "GCF_000009425.1"
+        ]
+      },
+      {
+        "accession": "WP_011677073.1",
+        "description": "WP_011677073.1 MULTISPECIES: 50S ribosomal protein L1 [Lactococcus]",
+        "subunit": "50S",
+        "ribosomal_protein": "L1",
+        "length_aa": 229,
+        "sequence_sha256": "621b8b1bbdb0de6497d2fb55aa5694352477805bdb41e71ee7a5592f4e27fd61",
+        "source_assemblies": [
+          "GCF_000009425.1"
+        ]
+      },
+      {
+        "accession": "WP_011677074.1",
+        "description": "WP_011677074.1 MULTISPECIES: 50S ribosomal protein L11 [Lactococcus]",
+        "subunit": "50S",
+        "ribosomal_protein": "L11",
+        "length_aa": 141,
+        "sequence_sha256": "3cb72fe8f38440d38fd4ea3b9791e4b79cf6d83748857e28f1e1204675c0bb16",
+        "source_assemblies": [
+          "GCF_000009425.1"
+        ]
+      },
+      {
+        "accession": "WP_011677151.1",
+        "description": "WP_011677151.1 MULTISPECIES: 50S ribosomal protein L15 [Lactococcus]",
+        "subunit": "50S",
+        "ribosomal_protein": "L15",
+        "length_aa": 147,
+        "sequence_sha256": "c4b22032428ab3e52175b1a53c3ca3d0e0ec6a6a7f2662477f2cd06a8910719b",
+        "source_assemblies": [
+          "GCF_000009425.1"
+        ]
+      },
+      {
+        "accession": "WP_011677153.1",
+        "description": "WP_011677153.1 50S ribosomal protein L18 [Lactococcus cremoris]",
+        "subunit": "50S",
+        "ribosomal_protein": "L18",
+        "length_aa": 115,
+        "sequence_sha256": "053bb50fdb7465f4e50aebab1f5da9edc6d48014fb8d6495a9170a9ebabc9fdd",
+        "source_assemblies": [
+          "GCF_000009425.1"
+        ]
+      },
+      {
+        "accession": "WP_011677155.1",
+        "description": "WP_011677155.1 MULTISPECIES: 30S ribosomal protein S8 [Lactococcus]",
+        "subunit": "30S",
+        "ribosomal_protein": "S8",
+        "length_aa": 132,
+        "sequence_sha256": "573f80f2994380b5e7d09c6a4feeb96498fd413461d9297eca47928c21723c06",
+        "source_assemblies": [
+          "GCF_000009425.1"
+        ]
+      },
+      {
+        "accession": "WP_011677158.1",
+        "description": "WP_011677158.1 MULTISPECIES: 50S ribosomal protein L16 [Lactococcus]",
+        "subunit": "50S",
+        "ribosomal_protein": "L16",
+        "length_aa": 137,
+        "sequence_sha256": "60683705a07773a82e4d57303be071c36cc110faba1ccafbc18987dfc9a0e589",
+        "source_assemblies": [
+          "GCF_000009425.1"
+        ]
+      },
+      {
+        "accession": "WP_011677159.1",
+        "description": "WP_011677159.1 MULTISPECIES: 30S ribosomal protein S19 [Lactococcus]",
+        "subunit": "30S",
+        "ribosomal_protein": "S19",
+        "length_aa": 92,
+        "sequence_sha256": "ca415971f66829ca97d886ff288cfb085e522dbaa71261e4e3f618bab283164a",
+        "source_assemblies": [
+          "GCF_000009425.1"
+        ]
+      },
+      {
+        "accession": "WP_011677160.1",
+        "description": "WP_011677160.1 MULTISPECIES: 50S ribosomal protein L2 [Lactococcus]",
+        "subunit": "50S",
+        "ribosomal_protein": "L2",
+        "length_aa": 276,
+        "sequence_sha256": "4152ad3720b2a46a4dbd15e98ebdda8774e31e64d1b38c3678c3dc73f84645f0",
+        "source_assemblies": [
+          "GCF_000009425.1"
+        ]
+      },
+      {
+        "accession": "WP_011677168.1",
+        "description": "WP_011677168.1 MULTISPECIES: 50S ribosomal protein L33 [Lactococcus]",
+        "subunit": "50S",
+        "ribosomal_protein": "L33",
+        "length_aa": 49,
+        "sequence_sha256": "9cd132f99c4636e358fe1db3183be0573365e70b93c180b943403c1e5923dac6",
+        "source_assemblies": [
+          "GCF_000009425.1"
+        ]
+      },
+      {
+        "accession": "WP_011677242.1",
+        "description": "WP_011677242.1 MULTISPECIES: 30S ribosomal protein S6 [Lactococcus]",
+        "subunit": "30S",
+        "ribosomal_protein": "S6",
+        "length_aa": 97,
+        "sequence_sha256": "c2b37c0874f5e99d11139a0a95c8f78c6ab4b1ec17f8136071ee8cb81551b4c4",
+        "source_assemblies": [
+          "GCF_000009425.1"
+        ]
+      },
+      {
+        "accession": "WP_011834878.1",
+        "description": "WP_011834878.1 MULTISPECIES: 30S ribosomal protein S16 [Lactococcus]",
+        "subunit": "30S",
+        "ribosomal_protein": "S16",
+        "length_aa": 90,
+        "sequence_sha256": "d6360ef613468349b5e3235d4c2cfa92953f812df7790471cde33e4acafbcd22",
+        "source_assemblies": [
+          "GCF_000009425.1"
+        ]
+      },
+      {
+        "accession": "WP_011835586.1",
+        "description": "WP_011835586.1 50S ribosomal protein L9 [Lactococcus cremoris]",
+        "subunit": "50S",
+        "ribosomal_protein": "L9",
+        "length_aa": 150,
+        "sequence_sha256": "b810f225a8864f6210ed018d255848836dd89e0436eb50bc7a54acf0f071324b",
+        "source_assemblies": [
+          "GCF_000009425.1"
+        ]
+      },
+      {
+        "accession": "WP_011835750.1",
+        "description": "WP_011835750.1 MULTISPECIES: 50S ribosomal protein L20 [Lactococcus]",
+        "subunit": "50S",
+        "ribosomal_protein": "L20",
+        "length_aa": 119,
+        "sequence_sha256": "eedd0459aee92b197030ae3207913c214a50fc3fbcd2deb4d10e4c0c2f99b61f",
+        "source_assemblies": [
+          "GCF_000009425.1"
+        ]
+      },
+      {
+        "accession": "WP_011836022.1",
+        "description": "WP_011836022.1 MULTISPECIES: 30S ribosomal protein S5 [Lactococcus]",
+        "subunit": "30S",
+        "ribosomal_protein": "S5",
+        "length_aa": 168,
+        "sequence_sha256": "0f23e6435f41419a3bbd04e64a5fbd76a0ec2701d1cb0cf50740caf6abc10f77",
+        "source_assemblies": [
+          "GCF_000009425.1"
+        ]
+      },
+      {
+        "accession": "WP_011836023.1",
+        "description": "WP_011836023.1 50S ribosomal protein L6 [Lactococcus cremoris]",
+        "subunit": "50S",
+        "ribosomal_protein": "L6",
+        "length_aa": 178,
+        "sequence_sha256": "cb0391508906269d233329ddf55a4ab2598653458a819d7cdb7c9bb1cbc1b1f8",
+        "source_assemblies": [
+          "GCF_000009425.1"
+        ]
+      },
+      {
+        "accession": "WP_011836026.1",
+        "description": "WP_011836026.1 MULTISPECIES: 50S ribosomal protein L23 [Lactococcus]",
+        "subunit": "50S",
+        "ribosomal_protein": "L23",
+        "length_aa": 97,
+        "sequence_sha256": "f8d9648cd3db8ed703de0e93cb7f7751c52962366006d5c9a4ca1ce3fc12f780",
+        "source_assemblies": [
+          "GCF_000009425.1"
+        ]
+      },
+      {
+        "accession": "WP_011836027.1",
+        "description": "WP_011836027.1 50S ribosomal protein L4 [Lactococcus cremoris]",
+        "subunit": "50S",
+        "ribosomal_protein": "L4",
+        "length_aa": 208,
+        "sequence_sha256": "ecbcc7103708912e12c2792b2ad361c8490be931b9486b36c246cf6122db0ea5",
+        "source_assemblies": [
+          "GCF_000009425.1"
+        ]
+      },
+      {
+        "accession": "WP_011836028.1",
+        "description": "WP_011836028.1 MULTISPECIES: 50S ribosomal protein L3 [Lactococcus]",
+        "subunit": "50S",
+        "ribosomal_protein": "L3",
+        "length_aa": 207,
+        "sequence_sha256": "e0d7fd9a1093929890d48a0d892226395d919e0ad736b3fa31746f10837718e4",
+        "source_assemblies": [
+          "GCF_000009425.1"
+        ]
+      },
+      {
+        "accession": "WP_011836067.1",
+        "description": "WP_011836067.1 MULTISPECIES: 30S ribosomal protein S2 [Lactococcus]",
+        "subunit": "30S",
+        "ribosomal_protein": "S2",
+        "length_aa": 255,
+        "sequence_sha256": "35d3d3cebae88fa249852792ae685feca8c0659bd76a20ce4ebffe0938feb58d",
+        "source_assemblies": [
+          "GCF_000009425.1"
+        ]
+      },
+      {
+        "accession": "WP_011836164.1",
+        "description": "WP_011836164.1 50S ribosomal protein L13 [Lactococcus cremoris]",
+        "subunit": "50S",
+        "ribosomal_protein": "L13",
+        "length_aa": 148,
+        "sequence_sha256": "4555765e5447210250f6be6f0977c38006b7e2843c72e6e64356f838a856f86d",
+        "source_assemblies": [
+          "GCF_000009425.1"
+        ]
+      },
+      {
+        "accession": "WP_003129920.1",
+        "description": "WP_003129920.1 MULTISPECIES: 50S ribosomal protein L15 [Lactococcus]",
+        "subunit": "50S",
+        "ribosomal_protein": "L15",
+        "length_aa": 147,
+        "sequence_sha256": "0fdb716d2f831e458fde64599ec8fedd7c079b26e2b215bb0b707b1c8f29fe48",
+        "source_assemblies": [
+          "GCF_000006865.1",
+          "GCF_964062975.1"
+        ]
+      },
+      {
+        "accession": "WP_003129922.1",
+        "description": "WP_003129922.1 MULTISPECIES: 30S ribosomal protein S5 [Lactococcus]",
+        "subunit": "30S",
+        "ribosomal_protein": "S5",
+        "length_aa": 168,
+        "sequence_sha256": "445acf49961f999b441f3c220aeb9d7da2144aa527853fdcb3f0f60176c662cc",
+        "source_assemblies": [
+          "GCF_000006865.1",
+          "GCF_964062975.1"
+        ]
+      },
+      {
+        "accession": "WP_003129924.1",
+        "description": "WP_003129924.1 MULTISPECIES: 50S ribosomal protein L18 [Lactococcus]",
+        "subunit": "50S",
+        "ribosomal_protein": "L18",
+        "length_aa": 115,
+        "sequence_sha256": "8a40dbf4ae0b2442bfcbf46e7f7b756020c0d649a770138a08ee8a894cdc2a36",
+        "source_assemblies": [
+          "GCF_000006865.1",
+          "GCF_964062975.1"
+        ]
+      },
+      {
+        "accession": "WP_003129925.1",
+        "description": "WP_003129925.1 MULTISPECIES: 50S ribosomal protein L6 [Lactococcus]",
+        "subunit": "50S",
+        "ribosomal_protein": "L6",
+        "length_aa": 178,
+        "sequence_sha256": "5b40541084b6c56c0a7acb357844635e3edc5af0d2e37fba28a6585daff39276",
+        "source_assemblies": [
+          "GCF_000006865.1",
+          "GCF_964062975.1"
+        ]
+      },
+      {
+        "accession": "WP_003129958.1",
+        "description": "WP_003129958.1 MULTISPECIES: 50S ribosomal protein L16 [Lactococcus]",
+        "subunit": "50S",
+        "ribosomal_protein": "L16",
+        "length_aa": 137,
+        "sequence_sha256": "d3a35cb06bc6c7895878f7504269ba0b68060dfd34725137fc17060e4415351c",
+        "source_assemblies": [
+          "GCF_000006865.1",
+          "GCF_964062975.1"
+        ]
+      },
+      {
+        "accession": "WP_003129963.1",
+        "description": "WP_003129963.1 MULTISPECIES: 30S ribosomal protein S19 [Lactococcus]",
+        "subunit": "30S",
+        "ribosomal_protein": "S19",
+        "length_aa": 92,
+        "sequence_sha256": "999f9e5940ad5e3d5158a6859b350b66c289f0f7f0615e919090c459bf113b9d",
+        "source_assemblies": [
+          "GCF_000006865.1",
+          "GCF_964062975.1"
+        ]
+      },
+      {
+        "accession": "WP_003129965.1",
+        "description": "WP_003129965.1 MULTISPECIES: 50S ribosomal protein L2 [Lactococcus]",
+        "subunit": "50S",
+        "ribosomal_protein": "L2",
+        "length_aa": 276,
+        "sequence_sha256": "69bc9d6b0dede0956aed97a150ac25e7ec8dbeebad2bc30051c31c3d5758a4b4",
+        "source_assemblies": [
+          "GCF_000006865.1",
+          "GCF_964062975.1"
+        ]
+      },
+      {
+        "accession": "WP_003129966.1",
+        "description": "WP_003129966.1 MULTISPECIES: 50S ribosomal protein L23 [Bacilli]",
+        "subunit": "50S",
+        "ribosomal_protein": "L23",
+        "length_aa": 97,
+        "sequence_sha256": "4671d64974bf74e37c3a2491e2b1b9342948655de0ba4f68feb03d664ba767fd",
+        "source_assemblies": [
+          "GCF_000006865.1",
+          "GCF_964062975.1"
+        ]
+      },
+      {
+        "accession": "WP_003129968.1",
+        "description": "WP_003129968.1 MULTISPECIES: 50S ribosomal protein L4 [Lactococcus]",
+        "subunit": "50S",
+        "ribosomal_protein": "L4",
+        "length_aa": 208,
+        "sequence_sha256": "6adfab51ce1552d83f42b63e2e729ec7613f79c1cdb07f2ea128eb215fbc1ea8",
+        "source_assemblies": [
+          "GCF_000006865.1",
+          "GCF_964062975.1"
+        ]
+      },
+      {
+        "accession": "WP_003129970.1",
+        "description": "WP_003129970.1 MULTISPECIES: 50S ribosomal protein L3 [Lactococcus]",
+        "subunit": "50S",
+        "ribosomal_protein": "L3",
+        "length_aa": 207,
+        "sequence_sha256": "713638e1265193b139ac359ffe584dcf35f18534d5c40b4af42e5879d6db2ee4",
+        "source_assemblies": [
+          "GCF_000006865.1",
+          "GCF_964062975.1"
+        ]
+      },
+      {
+        "accession": "WP_003130213.1",
+        "description": "WP_003130213.1 MULTISPECIES: 50S ribosomal protein L10 [Lactococcus]",
+        "subunit": "50S",
+        "ribosomal_protein": "L10",
+        "length_aa": 171,
+        "sequence_sha256": "99bb00b7c86b431554f820af7df21855147cca5fe3e10e246deb158cf34d36b8",
+        "source_assemblies": [
+          "GCF_000006865.1",
+          "GCF_964062975.1"
+        ]
+      },
+      {
+        "accession": "WP_003130214.1",
+        "description": "WP_003130214.1 MULTISPECIES: 50S ribosomal protein L7/L12 [Lactococcus]",
+        "subunit": "50S",
+        "ribosomal_protein": "L7/L12",
+        "length_aa": 121,
+        "sequence_sha256": "8c5ca93a885af844eda2cd30b780acebcba7516797152e29d12ac20614ccccca",
+        "source_assemblies": [
+          "GCF_000006865.1",
+          "GCF_964062975.1"
+        ]
+      },
+      {
+        "accession": "WP_003130711.1",
+        "description": "WP_003130711.1 MULTISPECIES: 30S ribosomal protein S16 [Lactococcus]",
+        "subunit": "30S",
+        "ribosomal_protein": "S16",
+        "length_aa": 90,
+        "sequence_sha256": "f3b045646615aab63495f7c7e9f56218e6ea7e745a42eb3754a9328899b5f5c6",
+        "source_assemblies": [
+          "GCF_000006865.1",
+          "GCF_964062975.1"
+        ]
+      },
+      {
+        "accession": "WP_003130760.1",
+        "description": "WP_003130760.1 MULTISPECIES: type B 50S ribosomal protein L31 [Lactococcus]",
+        "subunit": "50S",
+        "ribosomal_protein": "L31",
+        "length_aa": 81,
+        "sequence_sha256": "4b3cd15f60d136a9f8ebac3a7f861267f8a686666a0b44b38bea490e7e6b26a7",
+        "source_assemblies": [
+          "GCF_000006865.1",
+          "GCF_964062975.1"
+        ]
+      },
+      {
+        "accession": "WP_003131954.1",
+        "description": "WP_003131954.1 MULTISPECIES: 30S ribosomal protein S6 [Lactococcus]",
+        "subunit": "30S",
+        "ribosomal_protein": "S6",
+        "length_aa": 97,
+        "sequence_sha256": "8f5d8bd2b659a7f58d1abbda0cdbd3488ace82a3854eeec66d9874863f15b1b6",
+        "source_assemblies": [
+          "GCF_000006865.1",
+          "GCF_964062975.1"
+        ]
+      },
+      {
+        "accession": "WP_003132352.1",
+        "description": "WP_003132352.1 MULTISPECIES: 50S ribosomal protein L20 [Bacilli]",
+        "subunit": "50S",
+        "ribosomal_protein": "L20",
+        "length_aa": 119,
+        "sequence_sha256": "8f24f043a64c1d52843d82268e49ecbe6850e8eda1eaa2995e898ecda1a53d8b",
+        "source_assemblies": [
+          "GCF_000006865.1",
+          "GCF_964062975.1"
+        ]
+      },
+      {
+        "accession": "WP_003132353.1",
+        "description": "WP_003132353.1 MULTISPECIES: 50S ribosomal protein L35 [Bacilli]",
+        "subunit": "50S",
+        "ribosomal_protein": "L35",
+        "length_aa": 66,
+        "sequence_sha256": "ffd0ec776b1126f78c16e3122de7201c9a7965432fe54117f30eb609d46f9432",
+        "source_assemblies": [
+          "GCF_000006865.1",
+          "GCF_964062975.1"
+        ]
+      },
+      {
+        "accession": "WP_003132464.1",
+        "description": "WP_003132464.1 MULTISPECIES: 50S ribosomal protein L9 [Lactococcus]",
+        "subunit": "50S",
+        "ribosomal_protein": "L9",
+        "length_aa": 150,
+        "sequence_sha256": "7e0dfef436d9331d8598ab771d129034f04da3880348f2ee243c959d277e5c75",
+        "source_assemblies": [
+          "GCF_000006865.1",
+          "GCF_964062975.1"
+        ]
+      },
+      {
+        "accession": "WP_004254643.1",
+        "description": "WP_004254643.1 MULTISPECIES: 50S ribosomal protein L11 [Lactococcus]",
+        "subunit": "50S",
+        "ribosomal_protein": "L11",
+        "length_aa": 141,
+        "sequence_sha256": "525d106afae6dcb715a8754ccadb41473ba863651b6656e1ce6851062baa8258",
+        "source_assemblies": [
+          "GCF_000006865.1",
+          "GCF_964062975.1"
+        ]
+      },
+      {
+        "accession": "WP_004254644.1",
+        "description": "WP_004254644.1 MULTISPECIES: 50S ribosomal protein L1 [Lactococcus]",
+        "subunit": "50S",
+        "ribosomal_protein": "L1",
+        "length_aa": 229,
+        "sequence_sha256": "c29a8f0338092547658bdca0a33ecfb42c5d9c9239dd96f12df01cf3ea6fe19c",
+        "source_assemblies": [
+          "GCF_000006865.1",
+          "GCF_964062975.1"
+        ]
+      },
+      {
+        "accession": "WP_004255752.1",
+        "description": "WP_004255752.1 MULTISPECIES: 30S ribosomal protein S4 [Lactococcus]",
+        "subunit": "30S",
+        "ribosomal_protein": "S4",
+        "length_aa": 203,
+        "sequence_sha256": "0ee46c763ce2b4129bc0a4cb334c68b94cce2ec102f36b151825371962c14984",
+        "source_assemblies": [
+          "GCF_000006865.1",
+          "GCF_964062975.1"
+        ]
+      },
+      {
+        "accession": "WP_010905608.1",
+        "description": "WP_010905608.1 MULTISPECIES: 30S ribosomal protein S14 [Lactococcus]",
+        "subunit": "30S",
+        "ribosomal_protein": "S14",
+        "length_aa": 89,
+        "sequence_sha256": "cb03f55621741e43fc901cb78fa009f3fbb5d0878657d7a00aa356467be6b678",
+        "source_assemblies": [
+          "GCF_000006865.1",
+          "GCF_964062975.1"
+        ]
+      },
+      {
+        "accession": "WP_010905746.1",
+        "description": "WP_010905746.1 50S ribosomal protein L21 [Lactococcus lactis]",
+        "subunit": "50S",
+        "ribosomal_protein": "L21",
+        "length_aa": 104,
+        "sequence_sha256": "e01ed485cda9ec42bdb33a4f9095ea4c954a41c741db38429401c94136575fde",
+        "source_assemblies": [
+          "GCF_000006865.1"
+        ]
+      },
+      {
+        "accession": "WP_010905747.1",
+        "description": "WP_010905747.1 50S ribosomal protein L27 [Lactococcus lactis]",
+        "subunit": "50S",
+        "ribosomal_protein": "L27",
+        "length_aa": 94,
+        "sequence_sha256": "2fc00fee1c371c0c8a0b4f7d9d3e0cd8df807d7664f0a6259b8ce6a38be305aa",
+        "source_assemblies": [
+          "GCF_000006865.1"
+        ]
+      },
+      {
+        "accession": "WP_010906113.1",
+        "description": "WP_010906113.1 MULTISPECIES: 30S ribosomal protein S20 [Lactococcus]",
+        "subunit": "30S",
+        "ribosomal_protein": "S20",
+        "length_aa": 77,
+        "sequence_sha256": "28e629e7856035362dbd3490a529cdec5906c51c025876b5404ec6c70441425b",
+        "source_assemblies": [
+          "GCF_000006865.1",
+          "GCF_964062975.1"
+        ]
+      },
+      {
+        "accession": "WP_010906299.1",
+        "description": "WP_010906299.1 MULTISPECIES: 30S ribosomal protein S8 [Lactococcus]",
+        "subunit": "30S",
+        "ribosomal_protein": "S8",
+        "length_aa": 132,
+        "sequence_sha256": "67ccafdf9ac14de711b7b4bf0136305c6b141b23ac21adc70b7ffd4d51b0508d",
+        "source_assemblies": [
+          "GCF_000006865.1"
+        ]
+      },
+      {
+        "accession": "WP_010906301.1",
+        "description": "WP_010906301.1 30S ribosomal protein S3 [Lactococcus lactis]",
+        "subunit": "30S",
+        "ribosomal_protein": "S3",
+        "length_aa": 217,
+        "sequence_sha256": "f723df5409c46f96bcc1498fb8c46fc47f30dd2d46be32ad7a554d3c1c6d43fd",
+        "source_assemblies": [
+          "GCF_000006865.1"
+        ]
+      },
+      {
+        "accession": "WP_010906305.1",
+        "description": "WP_010906305.1 MULTISPECIES: 50S ribosomal protein L33 [Lactococcus]",
+        "subunit": "50S",
+        "ribosomal_protein": "L33",
+        "length_aa": 49,
+        "sequence_sha256": "3d6b961bd90aac1b6e5a20552a13769b2f5d29e9fd2a8aa6f747d079544011e4",
+        "source_assemblies": [
+          "GCF_000006865.1",
+          "GCF_964062975.1"
+        ]
+      },
+      {
+        "accession": "WP_010906340.1",
+        "description": "WP_010906340.1 MULTISPECIES: 30S ribosomal protein S2 [Lactococcus]",
+        "subunit": "30S",
+        "ribosomal_protein": "S2",
+        "length_aa": 255,
+        "sequence_sha256": "ed73ba9beb1e2298ccf56d0fa0d47664b27c88512d20fb1c69fe3a16aeeae5d2",
+        "source_assemblies": [
+          "GCF_000006865.1",
+          "GCF_964062975.1"
+        ]
+      },
+      {
+        "accession": "WP_010906417.1",
+        "description": "WP_010906417.1 MULTISPECIES: 50S ribosomal protein L13 [Lactococcus]",
+        "subunit": "50S",
+        "ribosomal_protein": "L13",
+        "length_aa": 148,
+        "sequence_sha256": "3615977c19f29ac29f4b79ab8cb6d31eba5ca5249469118ce6333c9abad1b0fc",
+        "source_assemblies": [
+          "GCF_000006865.1",
+          "GCF_964062975.1"
+        ]
+      },
+      {
+        "accession": "WP_012897519.1",
+        "description": "WP_012897519.1 MULTISPECIES: 50S ribosomal protein L19 [Lactococcus]",
+        "subunit": "50S",
+        "ribosomal_protein": "L19",
+        "length_aa": 114,
+        "sequence_sha256": "4c1a454a1e66a122d530c3f64619a50ef3ad15a9c175610b5a4b6f0250654830",
+        "source_assemblies": [
+          "GCF_000006865.1",
+          "GCF_964062975.1"
+        ]
+      },
+      {
+        "accession": "WP_003129932.1",
+        "description": "WP_003129932.1 MULTISPECIES: 30S ribosomal protein S8 [Lactococcus]",
+        "subunit": "30S",
+        "ribosomal_protein": "S8",
+        "length_aa": 132,
+        "sequence_sha256": "ca687e4b5959b92b558dc1bea9aeaee379181f54bb0738e8d48c5ad07bf94274",
+        "source_assemblies": [
+          "GCF_964062975.1"
+        ]
+      },
+      {
+        "accession": "WP_015427039.1",
+        "description": "WP_015427039.1 MULTISPECIES: 30S ribosomal protein S15 [Lactococcus]",
+        "subunit": "30S",
+        "ribosomal_protein": "S15",
+        "length_aa": 89,
+        "sequence_sha256": "8268e0d540ec956bfe17dfbcd06dd9a9d9def02e13597ddc5ea96b1f082a55c1",
+        "source_assemblies": [
+          "GCF_964062975.1"
+        ]
+      }
+    ]
+  },
+  "asset_filename": "lactococcus-v1.faa.gz",
+  "asset_sha256": "4e393475987c720d8acfdba6215ea6b123a41d34250b83202c7daf03d0a56679",
+  "fasta_sha256": "075848596f8e2f356d8c6ad244cc24ab27ea376a5305b32a59f790e029bb8d80",
+  "fasta_size_bytes": 17850
+}

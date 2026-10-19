@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "Please cite the original gRodon papers appropriate to your analysis; see README.md."
+title: "gRodon2 Python"
+version: 0.2.0
+type: software
+authors:
+  - family-names: Garza
+    given-names: Daniel
+references:
+  - type: article
+    title: "Estimating maximal microbial growth rates from cultures, metagenomes, and single cells via codon usage patterns"
+    authors:
+      - family-names: Weissman
+        given-names: JL
+      - family-names: Hou
+        given-names: Shengwei
+      - family-names: Fuhrman
+        given-names: Jed A.
+    year: 2021
+    doi: 10.1073/pnas.2016810118
+  - type: article
+    title: "Benchmarking community-wide estimates of growth potential from metagenomes using codon usage statistics"
+    authors:
+      - family-names: Weissman
+        given-names: JL
+    year: 2022
+    doi: 10.1128/msystems.00745-22

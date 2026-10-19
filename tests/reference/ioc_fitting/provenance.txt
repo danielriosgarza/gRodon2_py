@@ -1,0 +1,6 @@
+Synthetic numeric parity fixtures; no genome sequences.
+R version 4.6.1 (2026-06-24 ucrt)
+MASS 7.3.65
+PCA uses upstream gRodon fitIoC and predictIoC verbatim.
+Regression uses MASS::boxcox and stats::lm/predict.lm matching gRodon formulas.
+Regenerate using scripts/generate_ioc_fitting_reference.R.

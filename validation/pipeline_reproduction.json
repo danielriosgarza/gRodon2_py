@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "passed": true,
+  "audit_script_sha256": "8339af53f2f80a22652ae066922076854e09190dade137ced6c11c84b00cd306",
+  "method": "Read retained outputs only; no gene calling, alignment, growth calculation, or R execution",
+  "genome_sha256": "a94bf5ca00e91882fb5c054020ae467f1c7680efa330f2eaaa970cf9250b3053",
+  "exact_lactococcus_profile": {
+    "ordered_cds_ids_and_sequences_identical": true,
+    "cds_count": 2832,
+    "ordered_protein_ids_and_sequences_identical": true,
+    "protein_count": 2832,
+    "selected_ids_and_order_identical": true,
+    "selected_ribosomal": 54,
+    "retained_genes": 2600,
+    "retained_ribosomal": 42,
+    "archived_python_statistics_exactly_equal": 12,
+    "repeat_fingerprint_equal": true,
+    "scientific_fingerprint": "aa3e27030b6067d1bfaa01247eac348ede072e883b6334f351b5d027a5fa417b",
+    "doubling_time_hours": 0.12051619413002182,
+    "r_comparison": {
+      "statistics": 12,
+      "all_match": true,
+      "maximum_absolute_difference": 3.3306690738754696e-16
+    }
+  },
+  "broad_profile": {
+    "selected_ribosomal": 53,
+    "retained_ribosomal": 41,
+    "selected_only_in_lactococcus": [
+      "OZ061229.1_CDS01676"
+    ],
+    "selected_only_in_broad": [],
+    "repeat_fingerprint_equal": true,
+    "scientific_fingerprint": "fd0752db149d0c353217cd5dc532bcd2fa3ee4c72f95d3bb7c8b15ff3590a5fd",
+    "doubling_time_hours": 0.12129379522429953,
+    "r_comparison": {
+      "statistics": 12,
+      "all_match": true,
+      "maximum_absolute_difference": 5.273559366969494e-16
+    }
+  },
+  "batch": {
+    "requested": 2,
+    "completed": 1,
+    "failed": 1,
+    "csv_and_json_agree": true,
+    "successful_prediction_matches": true
+  },
+  "artifact_integrity": {
+    "all_passed": true,
+    "runs": [
+      {
+        "run": "batch_continue/genomes/0002_GCA_964062575.1_Lactococcus_lactis_CIRM-BIA2698_genomic",
+        "artifacts_verified": 13,
+        "manifest_sha256": "c3094a00ce45d29ecde066aeb6f0687ceba1c2f4122f347954c3abd9e82ad6dc"
+      },
+      {
+        "run": "broad_final_with_r",
+        "artifacts_verified": 17,
+        "manifest_sha256": "257cada8a44fbfc6797fa714de616e9e55d290ba7f6632bf15364a699336e2a7"
+      },
+      {
+        "run": "broad_native",
+        "artifacts_verified": 13,
+        "manifest_sha256": "45714cd0ca7d8ab9fc6582ed8a8071d6025abc2dbea69348442f9f1f9bf20a3d"
+      },
+      {
+        "run": "lactococcus_native",
+        "artifacts_verified": 13,
+        "manifest_sha256": "547fdf1bfdd64ea3d1ebbba6e5cdabc89d33f95f3b60f4e8d7dcd732b9401006"
+      },
+      {
+        "run": "lactococcus_with_r",
+        "artifacts_verified": 17,
+        "manifest_sha256": "167ce4f4e3276b8ddd34ff2a2cc2681340d9066d6fc3060de678ad63b7c59c04"
+      }
+    ],
+    "artifacts_verified": 73
+  },
+  "interpretation": "These are estimates of maximum growth potential, not observed culture growth rates. Agreement verifies computational reproduction on the retained inputs."
+}

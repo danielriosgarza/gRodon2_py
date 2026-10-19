@@ -1,0 +1,51 @@
+This Python implementation is maintained separately from the original gRodon R
+package. It is not an official release of the upstream authors.
+
+Scientific algorithms and fitted model parameters originate in gRodon 2.7.3,
+by JL Weissman and contributors, source revision
+4b13053e7f49ca99bceeee36940f5e820c5b0c32:
+https://github.com/jlw-ecoevo/gRodon2
+
+Codon statistics follow the coRdon definitions by Anamaria Elek, Maja Kuzman,
+and Kristian Vlahovicek. This package implements the numerical formulas in
+Python; it does not bundle the coRdon R code.
+https://bioconductor.org/packages/coRdon
+
+The repository's MIT LICENSE applies to the Python implementation. The upstream
+R DESCRIPTION contains the literal License field "use_mit_license()" and the
+source checkout has no accompanying license file. This does not establish an
+unambiguous redistribution license for the fitted model data. The data retain
+upstream attribution and provenance; obtain clarification from the original
+authors before publicly redistributing those assets.
+
+The optional genome pipeline includes a derived bacterial ribosomal reference
+snapshot from UniProtKB/Swiss-Prot release 2026_03, The UniProt Consortium.
+The source query selects reviewed bacterial proteins carrying keyword KW-0689.
+The export retains complete canonical structural ribosomal proteins, excludes
+fragments and associated/unsupported entries, sorts identifiers, normalizes
+FASTA wrapping, and compresses the result. Full source identifiers and protein
+descriptions are preserved. Source URL, release, retrieval date, selection
+rules, and checksums are recorded in:
+src/grodon/data/references/bacteria-swissprot-v1.json
+
+UniProt applies the Creative Commons Attribution 4.0 International license
+(CC BY 4.0) to copyrightable parts of its databases. Credit The UniProt
+Consortium and identify the source release and these export modifications when
+redistributing this reference snapshot.
+https://www.uniprot.org/help/license
+https://creativecommons.org/licenses/by/4.0/
+https://www.uniprot.org/citations
+
+The lactococcus-v1 reference is an archived selection of NCBI RefSeq protein
+records from GCF_000009425.1, GCF_000006865.1, and GCF_964062975.1. Attribution
+belongs to NCBI RefSeq and the contributing genome projects. Source URLs,
+accessions, annotations, and checksums are preserved in:
+src/grodon/data/references/lactococcus-v1.json
+NCBI makes sequence data available for public use and notes that submitters
+may assert intellectual-property rights; its policy is available at:
+https://www.ncbi.nlm.nih.gov/home/about/policies/
+
+Pyrodigal and NCBI BLAST+ are separately installed optional tools. Their
+upstream licenses and citations continue to apply. BLAST+ binaries are not
+bundled in the Python distribution; the explicit setup command retrieves an
+official pinned NCBI release into the user's chosen local directory.

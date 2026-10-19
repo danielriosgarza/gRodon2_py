@@ -1,0 +1,1203 @@
+{
+  "schema_version": 1,
+  "scope": "Model evaluation from archived original R codon statistics; assembly-to-prediction equivalence is measured by the separate audited folder report.",
+  "generator": "scripts/export_folder_reference.py",
+  "source_report": {
+    "name": "test_genomes_comparison.json",
+    "sha256": "00ca95c901a25cd89402a92219550f1a42a971b5546d8c6996e35e4cafd46a48",
+    "generated_at": "2026-10-19T10:53:21.421824+00:00",
+    "manifest_sha256": "42542c4b894b3d4c789d3c5f0568d2354177de432b1d8f0e3917a338866987be"
+  },
+  "tolerance": {
+    "relative": 1e-10,
+    "absolute": 1e-12
+  },
+  "provenance": {
+    "provenance_1": {
+      "model": "gRodon_model_base_madin",
+      "prediction_settings": {
+        "mode": "full",
+        "training_set": "madin",
+        "temperature": null,
+        "genetic_code": 11,
+        "confidence": 0.95,
+        "fragments": false
+      },
+      "pipeline_settings": {
+        "reference": "bacteria-swissprot-v1",
+        "blastp": "C:\\Users\\drgarza\\Documents\\GitHub\\gRodon2_py\\.reference\\managed-blast\\bin\\blastp.exe",
+        "mode": "full",
+        "training_set": "madin",
+        "temperature": null,
+        "genetic_code": 11,
+        "gene_mode": "single",
+        "closed": true,
+        "mask": true,
+        "min_identity": 70.0,
+        "min_query_coverage": 0.8,
+        "min_reference_coverage": 0.8,
+        "max_evalue": 1e-08,
+        "min_ribosomal": 10,
+        "confidence": 0.95,
+        "threads": 1,
+        "timeout": 1800
+      },
+      "reference": {
+        "name": "bacteria-swissprot-v1",
+        "version": "1",
+        "sha256": "1dfb38a18a348e1771669437f8e26395d3188ea4bd76f5afda83c18f58feb134",
+        "proteins": 39743
+      },
+      "model_provenance": {
+        "package": "gRodon",
+        "version": "2.7.3",
+        "file": "R/sysdata.rda",
+        "sha256": "befeda83bd205e3a9b29d96ea7a260031e549abd6b5aefa34e6da735664138a9",
+        "git_revision": "4b13053e7f49ca99bceeee36940f5e820c5b0c32",
+        "export_method": "Original coefficients and R QR covariance; no model refitting"
+      },
+      "software": {
+        "python": {
+          "python": "3.13.5",
+          "grodon2-py": "0.2.0",
+          "numpy": "2.5.4",
+          "scipy": "1.18.1",
+          "pandas": "3.0.6",
+          "biopython": "1.88",
+          "pyrodigal": "3.7.1"
+        },
+        "r": {
+          "R": "R version 4.6.1 (2026-06-24 ucrt)",
+          "gRodon": "2.7.3",
+          "coRdon": "1.30.0",
+          "Biostrings": "2.80.2",
+          "matrixStats": "1.5.0",
+          "jsonlite": "2.0.0"
+        },
+        "blastp": "2.17.0"
+      }
+    }
+  },
+  "records": [
+    {
+      "accession": "GCA_964062575.1",
+      "source_sha256": "a94bf5ca00e91882fb5c054020ae467f1c7680efa330f2eaaa970cf9250b3053",
+      "genome_sha256": "a94bf5ca00e91882fb5c054020ae467f1c7680efa330f2eaaa970cf9250b3053",
+      "artifact_sha256": {
+        "predicted_cds.fna": "ffa56a60b44d6b021fa0dcff1fed09f97105b6a2cfbc066426260495800d0681",
+        "highly_expressed_ids.txt": "165575bb9cc2d08c8ba00a77e4fc7711714c780f6c727a8307e0aebf60772f27",
+        "r_result.json": "727360ffba63560f1e46279534ec441ca6ceb7da72292c2a386d8ad84017536b",
+        "r_comparison.json": "fa3cc527256f38de7254c93bdae4b94fb904b099aea368a8410b85ce29bd9526",
+        "reference.json": "bd748222d87fbd9871eaa5551714e7358f2e3f07c407c1de579e5a17862a779e",
+        "reference.faa.gz": "06c62cc9d5cc8629029f70d711cd4b3cfe79030e0ba80268b6b68179c4e64669"
+      },
+      "r_statistics": {
+        "CUBHE": 0.955585623935004,
+        "GC": 0.365423632900069,
+        "GCdiv": 0.134576367099931,
+        "ConsistencyHE": 0.440468534953852,
+        "CUB": 0.563937740138606,
+        "CPB": -0.421981139772939,
+        "FilteredSequences": 232,
+        "nHE": 41,
+        "dCUB": -0.694487805870444,
+        "d": 0.121293795224299,
+        "LowerCI": 0.0904555550836789,
+        "UpperCI": 0.164723986503638
+      },
+      "provenance_id": "provenance_1"
+    },
+    {
+      "accession": "GCA_964063365.1",
+      "source_sha256": "97badc90efe5792c182cccda5bcfdd59ab3fae05f6a8cef0d9cd569dc766addd",
+      "genome_sha256": "97badc90efe5792c182cccda5bcfdd59ab3fae05f6a8cef0d9cd569dc766addd",
+      "artifact_sha256": {
+        "predicted_cds.fna": "3cb8fdb4b0d922f74ab50cfcb863b0d22ec07e56bce340d40ad67f3f09d375a8",
+        "highly_expressed_ids.txt": "ba97e8f02583c3c80863c05c9d09e3b6d99fc9f7cc00a3d892fc1dbd378ba354",
+        "r_result.json": "6d81f82c4489feef35c598fda34c36064c4d99170f32f731b12221dc03d32a6c",
+        "r_comparison.json": "4f7cd4e9eccbc26b1568ffca57764213f97483ca37842ba6e80072d976d53055",
+        "reference.json": "bd748222d87fbd9871eaa5551714e7358f2e3f07c407c1de579e5a17862a779e",
+        "reference.faa.gz": "06c62cc9d5cc8629029f70d711cd4b3cfe79030e0ba80268b6b68179c4e64669"
+      },
+      "r_statistics": {
+        "CUBHE": 0.861623205319078,
+        "GC": 0.535080095700878,
+        "GCdiv": 0.0350800957008777,
+        "ConsistencyHE": 0.487612068201711,
+        "CUB": 0.564561348095449,
+        "CPB": -0.344817297892359,
+        "FilteredSequences": 347,
+        "nHE": 44,
+        "dCUB": -0.526181712980827,
+        "d": 0.43897204678979,
+        "LowerCI": 0.363746642776546,
+        "UpperCI": 0.532481227421665
+      },
+      "provenance_id": "provenance_1"
+    },
+    {
+      "accession": "GCA_964063435.1",
+      "source_sha256": "fd3cee292865253f6c271709cfa61445b947015add833236dcfc9b04debd6028",
+      "genome_sha256": "fd3cee292865253f6c271709cfa61445b947015add833236dcfc9b04debd6028",
+      "artifact_sha256": {
+        "predicted_cds.fna": "a90c19d7c9ae4c1f3c8dc528f3588322510569a305748e83822efe7fdfe6e3ed",
+        "highly_expressed_ids.txt": "0caad8cc010bd36430b1e88c4f86ce65da249757f10106864a1bd5cf9e14f6c6",
+        "r_result.json": "92a158340c6aab595f66f0ccdb04cf1c25b9da92251f2484b4d55bb899a3ce84",
+        "r_comparison.json": "85ef9ae7c779e62c3ca5045b6d6c06d19788d2680d722479c2fc9993d7400dad",
+        "reference.json": "bd748222d87fbd9871eaa5551714e7358f2e3f07c407c1de579e5a17862a779e",
+        "reference.faa.gz": "06c62cc9d5cc8629029f70d711cd4b3cfe79030e0ba80268b6b68179c4e64669"
+      },
+      "r_statistics": {
+        "CUBHE": 0.842842524952916,
+        "GC": 0.385813889366144,
+        "GCdiv": 0.114186110633856,
+        "ConsistencyHE": 0.472304806346889,
+        "CUB": 0.540712738743745,
+        "CPB": -0.361457990265461,
+        "FilteredSequences": 175,
+        "nHE": 44,
+        "dCUB": -0.558762101501656,
+        "d": 0.393050434389532,
+        "LowerCI": 0.321122203867713,
+        "UpperCI": 0.483959598178748
+      },
+      "provenance_id": "provenance_1"
+    },
+    {
+      "accession": "GCF_000010425.1",
+      "source_sha256": "a2efd86140632f8ede80fe4ff0f2acbc8377f4ff84e01be5766810ad98583d27",
+      "genome_sha256": "4992eff72fe1de2522af024ab6a3cc0591c9466dc6caee00c6d4e2ec10813545",
+      "artifact_sha256": {
+        "predicted_cds.fna": "6a99cdb9b1063ad02de6a625cc3312b03d9ce67b6d0548c5839d28f85d07dee4",
+        "highly_expressed_ids.txt": "c6ab416105b2ddfd6904a795701a016de4b2a7c7a3ce819c411d76b9635f924b",
+        "r_result.json": "a2b5098faa78cffbafb8574530365a37208b9801adc2fc7c298a9bdbe8e285ba",
+        "r_comparison.json": "2a5c4699539c6aceafee93ea821fc13724d47922a0d168025d7598cba0b1c868",
+        "reference.json": "bd748222d87fbd9871eaa5551714e7358f2e3f07c407c1de579e5a17862a779e",
+        "reference.faa.gz": "06c62cc9d5cc8629029f70d711cd4b3cfe79030e0ba80268b6b68179c4e64669"
+      },
+      "r_statistics": {
+        "CUBHE": 0.791085142981805,
+        "GC": 0.602262660102138,
+        "GCdiv": 0.102262660102138,
+        "ConsistencyHE": 0.471498111661871,
+        "CUB": 0.596520706782149,
+        "CPB": -0.267487711279069,
+        "FilteredSequences": 74,
+        "nHE": 43,
+        "dCUB": -0.32616543564633,
+        "d": 0.663427929969017,
+        "LowerCI": 0.540863124335286,
+        "UpperCI": 0.818726343771637
+      },
+      "provenance_id": "provenance_1"
+    },
+    {
+      "accession": "GCF_964060345.1",
+      "source_sha256": "8edadbc1520211cd00c7fae300d5f7b09cc87915d768e5ea41dc0dcf66043014",
+      "genome_sha256": "8b96a697390e9175b31b0498af43956d87eecba8d31106e92374333fb97aaaf9",
+      "artifact_sha256": {
+        "predicted_cds.fna": "809a827bc646a8190a3fd71f2ac0705d2c9663147824b078f792e75de7ff560a",
+        "highly_expressed_ids.txt": "2a00aafc61fa848c639f6bfd3c8d94298d74c0cdfb6a96f6d84b6a13206c6ca0",
+        "r_result.json": "0702ae047bd6bd5ccce4148eb7e6853284e0b96a0fefd32fcd1b96e9a3833636",
+        "r_comparison.json": "d7bad3e8f5240ed3fc6b7bcf9bd9d28dceb326afe717f343682a69a2148a2ba5",
+        "reference.json": "bd748222d87fbd9871eaa5551714e7358f2e3f07c407c1de579e5a17862a779e",
+        "reference.faa.gz": "06c62cc9d5cc8629029f70d711cd4b3cfe79030e0ba80268b6b68179c4e64669"
+      },
+      "r_statistics": {
+        "CUBHE": 0.830241426337617,
+        "GC": 0.451038541173462,
+        "GCdiv": 0.0489614588265381,
+        "ConsistencyHE": 0.503938673718405,
+        "CUB": 0.556967028941625,
+        "CPB": -0.372435162314248,
+        "FilteredSequences": 197,
+        "nHE": 41,
+        "dCUB": -0.490647351092363,
+        "d": 0.648057393408633,
+        "LowerCI": 0.551722430915909,
+        "UpperCI": 0.764071608215854
+      },
+      "provenance_id": "provenance_1"
+    },
+    {
+      "accession": "GCF_964062525.1",
+      "source_sha256": "f87f2bf9435ab7a9fb6090894e1541906425cc2edcb9e40605016b24507d33e5",
+      "genome_sha256": "911dc2fe9b625b9a2193663b7a5cea27cdd462b48f1174c1de92bc8d0a933e5f",
+      "artifact_sha256": {
+        "predicted_cds.fna": "5bd3f16ec12ddd5d4e53e980abb5751a407f3e0b2bf9331322f2af90e6f88b1f",
+        "highly_expressed_ids.txt": "0dfefaf77158b397810dfd083cb73b67ce1162ca2daabae4274ff0b6531d7dd4",
+        "r_result.json": "7ec20e7011c3844902b4c49b87b3f22eb1d4eaf2449cfdadb83c94a49c8322b1",
+        "r_comparison.json": "731ebca67917b3eb63b25c6dc7821e31a80599943c3484aa055bb36fd4d2dfc9",
+        "reference.json": "bd748222d87fbd9871eaa5551714e7358f2e3f07c407c1de579e5a17862a779e",
+        "reference.faa.gz": "06c62cc9d5cc8629029f70d711cd4b3cfe79030e0ba80268b6b68179c4e64669"
+      },
+      "r_statistics": {
+        "CUBHE": 0.934654276595173,
+        "GC": 0.431625788743492,
+        "GCdiv": 0.0683742112565076,
+        "ConsistencyHE": 0.497321253217452,
+        "CUB": 0.567599547215328,
+        "CPB": -0.368898191934544,
+        "FilteredSequences": 193,
+        "nHE": 42,
+        "dCUB": -0.646679038383019,
+        "d": 0.29620778050475,
+        "LowerCI": 0.239541081820604,
+        "UpperCI": 0.368695537296633
+      },
+      "provenance_id": "provenance_1"
+    },
+    {
+      "accession": "GCF_964062605.1",
+      "source_sha256": "7cf3ddaa4d3a5a3eb50edfc4d65e15b35a534b5a19cfe39523740575423f3f6a",
+      "genome_sha256": "ebf17042df1947c9989b409c7501c8293fa313092fa5376c275ea55866c9db51",
+      "artifact_sha256": {
+        "predicted_cds.fna": "0354e9403d761391e063855599cbcd97341be7deb6deeb6b4232091dc0120b63",
+        "highly_expressed_ids.txt": "04e1b155eaa47e69a3425138e0ddcf273128b616a6d500d65ee5ada0c0f06ac3",
+        "r_result.json": "1d27ec07d510b07178de7f79990cda2df0fd593d471ad6a8ca13b04f7e7cedb5",
+        "r_comparison.json": "d7b81f0cf85e6529ffcae10c92f45529cf4a95c4dd656a5c896be2808039c6bb",
+        "reference.json": "bd748222d87fbd9871eaa5551714e7358f2e3f07c407c1de579e5a17862a779e",
+        "reference.faa.gz": "06c62cc9d5cc8629029f70d711cd4b3cfe79030e0ba80268b6b68179c4e64669"
+      },
+      "r_statistics": {
+        "CUBHE": 0.781088773018429,
+        "GC": 0.427448758250888,
+        "GCdiv": 0.072551241749112,
+        "ConsistencyHE": 0.485537154969587,
+        "CUB": 0.560698837837904,
+        "CPB": -0.39197776207331,
+        "FilteredSequences": 185,
+        "nHE": 41,
+        "dCUB": -0.393062942720491,
+        "d": 0.680014936291948,
+        "LowerCI": 0.574427677098904,
+        "UpperCI": 0.808338171531961
+      },
+      "provenance_id": "provenance_1"
+    },
+    {
+      "accession": "GCF_964062635.1",
+      "source_sha256": "d950751f95d25160528275cde0e8b231d721e853c0da1909b8cb6f47cc3bf4ce",
+      "genome_sha256": "f31246c67d45a82e9eec6a0f542d9a606dd8a82491fea28cc0186c4a5325078b",
+      "artifact_sha256": {
+        "predicted_cds.fna": "c4f2c88d4101d9a6ae449a4a030d810ad9e62a41676cdad54c17558b9f0e9bed",
+        "highly_expressed_ids.txt": "de1f0c6355f85637eeb483266ad81ab764100c72d4f06d90a81f91f44b1f8467",
+        "r_result.json": "a09deff3fe691c7ba6c0f8c139e3493577464805019c89bd4e4a45c0e681f336",
+        "r_comparison.json": "c0124272487b5c8f81c5a765ba6ca1c2a9702c837d4d34c7ceedba1283e4f67b",
+        "reference.json": "bd748222d87fbd9871eaa5551714e7358f2e3f07c407c1de579e5a17862a779e",
+        "reference.faa.gz": "06c62cc9d5cc8629029f70d711cd4b3cfe79030e0ba80268b6b68179c4e64669"
+      },
+      "r_statistics": {
+        "CUBHE": 0.696678407075057,
+        "GC": 0.382044529413086,
+        "GCdiv": 0.117955470586914,
+        "ConsistencyHE": 0.511814622693058,
+        "CUB": 0.553351008585825,
+        "CPB": -0.385105078625615,
+        "FilteredSequences": 153,
+        "nHE": 41,
+        "dCUB": -0.259017145112878,
+        "d": 1.98325241963646,
+        "LowerCI": 1.77527619157606,
+        "UpperCI": 2.21950332657161
+      },
+      "provenance_id": "provenance_1"
+    },
+    {
+      "accession": "GCF_964062735.1",
+      "source_sha256": "e4766f25c741ae823f09feb84b5bc3985fb37f02b1941641e02d3b959b9db473",
+      "genome_sha256": "c57bf684c96fd214a7a6d7ac9c7cc17b165847a038e5192fc7f2dc9b667f5877",
+      "artifact_sha256": {
+        "predicted_cds.fna": "f78576e5c251135d0bc32c1fded5a9f5c612fbdfe5020a7e52c9b17a970b937b",
+        "highly_expressed_ids.txt": "652bbfc4e319948aeef2e7c08571841c7b64771e66a501f6039269f23c03ce73",
+        "r_result.json": "25bd6a314c785d01731675724a1843d7940a05ff0120d65caddc6fb4c25dbd59",
+        "r_comparison.json": "5c809ee67b3a25964ca6edc350bc7b35ec56437a4aa8f80f08b163a5452b5aca",
+        "reference.json": "bd748222d87fbd9871eaa5551714e7358f2e3f07c407c1de579e5a17862a779e",
+        "reference.faa.gz": "06c62cc9d5cc8629029f70d711cd4b3cfe79030e0ba80268b6b68179c4e64669"
+      },
+      "r_statistics": {
+        "CUBHE": 0.833337698325374,
+        "GC": 0.44516379639441,
+        "GCdiv": 0.05483620360559,
+        "ConsistencyHE": 0.510718032918574,
+        "CUB": 0.552606519095044,
+        "CPB": -0.377343589706184,
+        "FilteredSequences": 181,
+        "nHE": 41,
+        "dCUB": -0.508012789443851,
+        "d": 0.691694580656614,
+        "LowerCI": 0.590741781312563,
+        "UpperCI": 0.812820472975765
+      },
+      "provenance_id": "provenance_1"
+    },
+    {
+      "accession": "GCF_964062745.1",
+      "source_sha256": "c134f7a1b6f932734edc69323b15c63b6687b270d0f6b8bc64966d48932bde31",
+      "genome_sha256": "42a7a8a4c719bb152ab3586308d8f4f4b0ba5f60e6240f1a21b158e7bed38e3f",
+      "artifact_sha256": {
+        "predicted_cds.fna": "c8765e809de5311a7a6c66578c199d872e58c9de797b2590b4665f36001fdcca",
+        "highly_expressed_ids.txt": "7a1c47578d44aa8c4f8615cd52b499c6d850921bc61a9e138e7463cc39567608",
+        "r_result.json": "3104040291e4647b831042bf13f150666f6d6c0e0b31d5f2bd45d3f07c2c4dc9",
+        "r_comparison.json": "ea60a8831c5c5aaed72d57b6198e385d04c24adf42af24c9ce5b5d52388ae10d",
+        "reference.json": "bd748222d87fbd9871eaa5551714e7358f2e3f07c407c1de579e5a17862a779e",
+        "reference.faa.gz": "06c62cc9d5cc8629029f70d711cd4b3cfe79030e0ba80268b6b68179c4e64669"
+      },
+      "r_statistics": {
+        "CUBHE": 0.905106930244463,
+        "GC": 0.508393056673046,
+        "GCdiv": 0.00839305667304646,
+        "ConsistencyHE": 0.530975267020158,
+        "CUB": 0.598577079956574,
+        "CPB": -0.341405431620352,
+        "FilteredSequences": 235,
+        "nHE": 42,
+        "dCUB": -0.512097540236802,
+        "d": 0.595737922480665,
+        "LowerCI": 0.496745455145583,
+        "UpperCI": 0.717890727040057
+      },
+      "provenance_id": "provenance_1"
+    },
+    {
+      "accession": "GCF_964062795.1",
+      "source_sha256": "568d57d74ad760cf92d650e7c2e473c7c9bfe9d2fefbf8bd5fd546691253016c",
+      "genome_sha256": "d89d6f8a572b1476ba50f43272fc9a37ad696d70e802374f31a363fe1ab733cf",
+      "artifact_sha256": {
+        "predicted_cds.fna": "0575cc20f3d98a73c21a25522d31ada9dfe156d616cb8e37c6b9cdc024834f45",
+        "highly_expressed_ids.txt": "ba964392ca3b0ea07b56cecdf10d5d379d51a2b3d5dcd8df5546dc94a784127a",
+        "r_result.json": "83eac1cd8a848ee87c137250e331c0cf43b03df0d85e87638fe6417b1f93cc40",
+        "r_comparison.json": "486334a16fb227b89787b5c1f7e8947e64785bddbdf6a176311319ba39831c49",
+        "reference.json": "bd748222d87fbd9871eaa5551714e7358f2e3f07c407c1de579e5a17862a779e",
+        "reference.faa.gz": "06c62cc9d5cc8629029f70d711cd4b3cfe79030e0ba80268b6b68179c4e64669"
+      },
+      "r_statistics": {
+        "CUBHE": 0.766729493660942,
+        "GC": 0.439571821846039,
+        "GCdiv": 0.0604281781539607,
+        "ConsistencyHE": 0.519796657379032,
+        "CUB": 0.568371546853033,
+        "CPB": -0.425916333893298,
+        "FilteredSequences": 200,
+        "nHE": 42,
+        "dCUB": -0.348993449630228,
+        "d": 1.17482316074172,
+        "LowerCI": 1.01681628500089,
+        "UpperCI": 1.36147790129804
+      },
+      "provenance_id": "provenance_1"
+    },
+    {
+      "accession": "GCF_964062975.1",
+      "source_sha256": "0b6c035414d886dc7a82b58bbd8d8e095bb2209bd7977d23dbfe589f62706885",
+      "genome_sha256": "df55cc973ae941e260edf63c497a387798acce2534376387ff9b84dffe711cfb",
+      "artifact_sha256": {
+        "predicted_cds.fna": "1790a81b558e4d675223fc6d14714e3e821c0b8f2b485b563e469ec62ee3ec4d",
+        "highly_expressed_ids.txt": "bf47ad443dae7af66519dc938ff2fedcff0e52b0219e2bf90f2df07dd42a54f8",
+        "r_result.json": "d7ca3d9e950fe4391e2c55a4ebd123f1893e4e196687ba85909b208a91818180",
+        "r_comparison.json": "64d496b72010732133711c2b584a4266dd2a108e217f5d0c2004346a1be92a6e",
+        "reference.json": "bd748222d87fbd9871eaa5551714e7358f2e3f07c407c1de579e5a17862a779e",
+        "reference.faa.gz": "06c62cc9d5cc8629029f70d711cd4b3cfe79030e0ba80268b6b68179c4e64669"
+      },
+      "r_statistics": {
+        "CUBHE": 0.925740902120223,
+        "GC": 0.358822728039515,
+        "GCdiv": 0.141177271960485,
+        "ConsistencyHE": 0.475413252678792,
+        "CUB": 0.556049597655222,
+        "CPB": -0.416955369967431,
+        "FilteredSequences": 170,
+        "nHE": 42,
+        "dCUB": -0.66485311026918,
+        "d": 0.219158378536568,
+        "LowerCI": 0.171600896687643,
+        "UpperCI": 0.282360427513344
+      },
+      "provenance_id": "provenance_1"
+    },
+    {
+      "accession": "GCF_964063155.1",
+      "source_sha256": "d6b7c3c9e3beb592f56390d504bf0bf22325daaffa3527363664d5256da2302d",
+      "genome_sha256": "37ce7c1d2a06bfb2ccaddeafcd0d3d8caca7c73ae977e72fde3383509d4546be",
+      "artifact_sha256": {
+        "predicted_cds.fna": "5c596db39761648a7fd24228960668872e5d83d6ce00e9222a85ae61672c9bed",
+        "highly_expressed_ids.txt": "e71936415bc66d80a735d3d4f54a4fb3e8158c117807451a780d138a1147d8a0",
+        "r_result.json": "b445ac8dec02edc5870e4a89082965730dfbf2b670b230aad715029c85d9ed4e",
+        "r_comparison.json": "392a2df7fe11c3d7ae95765ba99722fe86aff5745c545ef87d5d5b5dcf425975",
+        "reference.json": "bd748222d87fbd9871eaa5551714e7358f2e3f07c407c1de579e5a17862a779e",
+        "reference.faa.gz": "06c62cc9d5cc8629029f70d711cd4b3cfe79030e0ba80268b6b68179c4e64669"
+      },
+      "r_statistics": {
+        "CUBHE": 0.756169406314464,
+        "GC": 0.392188388569982,
+        "GCdiv": 0.107811611430018,
+        "ConsistencyHE": 0.526113352678675,
+        "CUB": 0.551926036651166,
+        "CPB": -0.37320582790163,
+        "FilteredSequences": 135,
+        "nHE": 41,
+        "dCUB": -0.370055688806696,
+        "d": 1.58423210557051,
+        "LowerCI": 1.40479188984272,
+        "UpperCI": 1.79031103539321
+      },
+      "provenance_id": "provenance_1"
+    },
+    {
+      "accession": "GCF_964063315.1",
+      "source_sha256": "3877262717aa652e96bf5c16b2d8afa7f9c939b798a872b0464a6e0a638b514b",
+      "genome_sha256": "9490f8ef4004099f3425ec239e771de518164672a03dd3a6dab736a0997d7938",
+      "artifact_sha256": {
+        "predicted_cds.fna": "663c41dd83f8ea57d11e33d704cc7187d929118193c9ca4d162e6eda521e4045",
+        "highly_expressed_ids.txt": "4491fc44710a6e966ed3065d825f999b0fb847efdd371154c318825bd8bfbde3",
+        "r_result.json": "ce553168e9a93316263d3da66dbf15aa764851cef9fc9ff1e551da86430e8d93",
+        "r_comparison.json": "5d7e89d724c12524aafb3782a5de8a6b1bf970e1e23af16d5af8d9864cd3a401",
+        "reference.json": "bd748222d87fbd9871eaa5551714e7358f2e3f07c407c1de579e5a17862a779e",
+        "reference.faa.gz": "06c62cc9d5cc8629029f70d711cd4b3cfe79030e0ba80268b6b68179c4e64669"
+      },
+      "r_statistics": {
+        "CUBHE": 0.808697227061052,
+        "GC": 0.380106494758214,
+        "GCdiv": 0.119893505241786,
+        "ConsistencyHE": 0.475802183320906,
+        "CUB": 0.543888342912878,
+        "CPB": -0.369935446314255,
+        "FilteredSequences": 115,
+        "nHE": 43,
+        "dCUB": -0.486880970329221,
+        "d": 0.510382566195213,
+        "LowerCI": 0.423429075149326,
+        "UpperCI": 0.618317735190034
+      },
+      "provenance_id": "provenance_1"
+    },
+    {
+      "accession": "GCF_964063325.1",
+      "source_sha256": "44b7f387308b4ea4b9384e33c218c0d6d9213c6e686f4c2f88eff606bb4f1668",
+      "genome_sha256": "6be9b3a800f13b12e78e3179475e42d5dc5bdb2249271ccc639e20c7355979b1",
+      "artifact_sha256": {
+        "predicted_cds.fna": "d4f738fd28383c35512849bd807167153bcfc17a6e93959f95e72d50238e38ec",
+        "highly_expressed_ids.txt": "79037e90e5ec27e6a2690a15eff28e2c09c2d14890435d970e543db6e4d060d4",
+        "r_result.json": "5d98643d78c55fa937204ced7565d6c6633e61d0f9ce4189ab2cae4898c4d27d",
+        "r_comparison.json": "b60c5c8ba349014d3f3fb2273b655399e5c3aedf01b46154ab3ac65c704743b7",
+        "reference.json": "bd748222d87fbd9871eaa5551714e7358f2e3f07c407c1de579e5a17862a779e",
+        "reference.faa.gz": "06c62cc9d5cc8629029f70d711cd4b3cfe79030e0ba80268b6b68179c4e64669"
+      },
+      "r_statistics": {
+        "CUBHE": 0.818654286503787,
+        "GC": 0.499762464407747,
+        "GCdiv": 0.000237535592253479,
+        "ConsistencyHE": 0.498905519516612,
+        "CUB": 0.566215371723859,
+        "CPB": -0.337832075525944,
+        "FilteredSequences": 284,
+        "nHE": 44,
+        "dCUB": -0.445835502507412,
+        "d": 0.701622402520756,
+        "LowerCI": 0.598516951007729,
+        "UpperCI": 0.825501115372564
+      },
+      "provenance_id": "provenance_1"
+    },
+    {
+      "accession": "GCF_964063335.1",
+      "source_sha256": "8695463ccefbf1616bb1f86f177e4cd585c8b5582cb1ffb8517b326a96bf129a",
+      "genome_sha256": "1cbee8ec3f49f9dd81f82865f840e6e303a9064646dc739da6d2fdae3f0402c4",
+      "artifact_sha256": {
+        "predicted_cds.fna": "a366e32baaefb9374fb06eb1326c9c6f69db9933749cc44b3c8455f3586a4a1e",
+        "highly_expressed_ids.txt": "88a3874a2ec262dc2d44c975f3dc455400c394bfa8c07cd20f508efe1704b2bc",
+        "r_result.json": "b735fd7665abfbc9f6d116f9130a29c71b8897cf25da0b317f982b300e4f36a3",
+        "r_comparison.json": "7c118e134cc4132ad3ec1d177d6836c117581a07835d523e4df3390aaa414a86",
+        "reference.json": "bd748222d87fbd9871eaa5551714e7358f2e3f07c407c1de579e5a17862a779e",
+        "reference.faa.gz": "06c62cc9d5cc8629029f70d711cd4b3cfe79030e0ba80268b6b68179c4e64669"
+      },
+      "r_statistics": {
+        "CUBHE": 0.814377156019574,
+        "GC": 0.502537991060927,
+        "GCdiv": 0.00253799106092689,
+        "ConsistencyHE": 0.507941131415913,
+        "CUB": 0.566447228727177,
+        "CPB": -0.337858333530751,
+        "FilteredSequences": 271,
+        "nHE": 44,
+        "dCUB": -0.437692894798873,
+        "d": 0.825511485409417,
+        "LowerCI": 0.71063970163707,
+        "UpperCI": 0.962067477251486
+      },
+      "provenance_id": "provenance_1"
+    },
+    {
+      "accession": "GCF_964063345.1",
+      "source_sha256": "a31d778b8d4a6205f67ee019a23d99d38a8c432fad39f8bc31da5d7f0cc717fd",
+      "genome_sha256": "a39f7b542776798e012210ac4e302e21f853d9d7017818b638a6f966cbc363ab",
+      "artifact_sha256": {
+        "predicted_cds.fna": "2ac00aadc192456669e5ea52f7cb640b4fdd0cfebf97e5b0812b5ec27096ba7a",
+        "highly_expressed_ids.txt": "3e00be02b66d832bb8f5a8e1393a2144e07bf8ea39c69b50b451c902760b639f",
+        "r_result.json": "f9c3312d748e9baa6843ef47e2d0004f78dcebc8f3bfb4b428ea8194f2f202f6",
+        "r_comparison.json": "4d1fa20bdb58a48725428a49eaf65961ec5107a72c3323c6c31d818203b7ca91",
+        "reference.json": "bd748222d87fbd9871eaa5551714e7358f2e3f07c407c1de579e5a17862a779e",
+        "reference.faa.gz": "06c62cc9d5cc8629029f70d711cd4b3cfe79030e0ba80268b6b68179c4e64669"
+      },
+      "r_statistics": {
+        "CUBHE": 0.844331905713918,
+        "GC": 0.594605003523608,
+        "GCdiv": 0.0946050035236081,
+        "ConsistencyHE": 0.496197760659619,
+        "CUB": 0.564694103819095,
+        "CPB": -0.291562478146713,
+        "FilteredSequences": 291,
+        "nHE": 43,
+        "dCUB": -0.495202269695396,
+        "d": 0.616433053270379,
+        "LowerCI": 0.513678869360421,
+        "UpperCI": 0.74332116590415
+      },
+      "provenance_id": "provenance_1"
+    },
+    {
+      "accession": "GCF_964063355.1",
+      "source_sha256": "8fc1ee777959d9d000b546939e53946482c45ee691c64aada0155dd9940eb3bc",
+      "genome_sha256": "25709a7773e731e79f08a2beb79fc103ab54732bc5b757742f8eae44ce8d97a3",
+      "artifact_sha256": {
+        "predicted_cds.fna": "468983b122647acd06823fceb5a6a3c89425c44d9c2b653b39eaf75a56ea56d8",
+        "highly_expressed_ids.txt": "1815eb359c4a2682c1952d883e016eb628af3acb640d1864352332c8a447c149",
+        "r_result.json": "24ceff9aac02711bce2645e6e20d502a6ec292692b9f93973c35fc63faf5de96",
+        "r_comparison.json": "100a29cbf213939a87d40443de8930cc783aa2ee4a4705442f1f810f1992f427",
+        "reference.json": "bd748222d87fbd9871eaa5551714e7358f2e3f07c407c1de579e5a17862a779e",
+        "reference.faa.gz": "06c62cc9d5cc8629029f70d711cd4b3cfe79030e0ba80268b6b68179c4e64669"
+      },
+      "r_statistics": {
+        "CUBHE": 0.842877982262089,
+        "GC": 0.425260086154479,
+        "GCdiv": 0.0747399138455207,
+        "ConsistencyHE": 0.466366031798483,
+        "CUB": 0.579420019410313,
+        "CPB": -0.383341906491853,
+        "FilteredSequences": 154,
+        "nHE": 42,
+        "dCUB": -0.454692544313368,
+        "d": 0.349173887408569,
+        "LowerCI": 0.281488383618575,
+        "UpperCI": 0.436078315006961
+      },
+      "provenance_id": "provenance_1"
+    },
+    {
+      "accession": "GCF_964063375.1",
+      "source_sha256": "8d73136ef15a7923f374d0a05987db45f57e71768005961ae50c2e35361e3068",
+      "genome_sha256": "56435c0f52186c4e28d58de9845f03c3d65053cb5614737d6bbcb8207fdcfc6e",
+      "artifact_sha256": {
+        "predicted_cds.fna": "74188944a7fd13e5dd8ebfe47c68fab4a714a04370dfd5c4be7eb6b17d304718",
+        "highly_expressed_ids.txt": "2041313d427cb87434797bda0096e7aa4c924464e688baa112b330b70182aacb",
+        "r_result.json": "29da979411ea7fa5af72820ffc4559dd81fdcf98cb642f957e5f67f932b813a2",
+        "r_comparison.json": "ee89d978e704ccd6eb952717b409b9b051cfc9784ff9126b6bec7de0b9a06a4d",
+        "reference.json": "bd748222d87fbd9871eaa5551714e7358f2e3f07c407c1de579e5a17862a779e",
+        "reference.faa.gz": "06c62cc9d5cc8629029f70d711cd4b3cfe79030e0ba80268b6b68179c4e64669"
+      },
+      "r_statistics": {
+        "CUBHE": 0.9083183519483,
+        "GC": 0.421925775305933,
+        "GCdiv": 0.0780742246940667,
+        "ConsistencyHE": 0.499976276240577,
+        "CUB": 0.5455498592605,
+        "CPB": -0.396030595629453,
+        "FilteredSequences": 359,
+        "nHE": 43,
+        "dCUB": -0.664959373611676,
+        "d": 0.345771455962347,
+        "LowerCI": 0.281339139134762,
+        "UpperCI": 0.427600788750029
+      },
+      "provenance_id": "provenance_1"
+    },
+    {
+      "accession": "GCF_964063385.1",
+      "source_sha256": "bd205a6e19492070861afc464114368ed0103989340eebe8041d8e7ef4480ab4",
+      "genome_sha256": "e9e5316f8a921c697fb625d03a5829202037e9be78c3a9b8b99301ef66d847ad",
+      "artifact_sha256": {
+        "predicted_cds.fna": "013ac949a5632ab39684cdd2d4f46be6688810e4aea99954e2a0ce0a984b3c99",
+        "highly_expressed_ids.txt": "9372fa62c3f4569813edfaf9b8372b98b79152cbc79926a8cf3463303ddca80f",
+        "r_result.json": "ecfaa5ea51e00198c5c9d7760de0b498acbc5d8da60c5f68f7ddff1f1ad722d8",
+        "r_comparison.json": "e36b9ebe02d89d54566243c7ccfc600a307bac19b97e642178fa110775dc8d36",
+        "reference.json": "bd748222d87fbd9871eaa5551714e7358f2e3f07c407c1de579e5a17862a779e",
+        "reference.faa.gz": "06c62cc9d5cc8629029f70d711cd4b3cfe79030e0ba80268b6b68179c4e64669"
+      },
+      "r_statistics": {
+        "CUBHE": 0.845482211657817,
+        "GC": 0.426286841668245,
+        "GCdiv": 0.0737131583317545,
+        "ConsistencyHE": 0.470208872891525,
+        "CUB": 0.577019214643669,
+        "CPB": -0.381074541277159,
+        "FilteredSequences": 137,
+        "nHE": 42,
+        "dCUB": -0.465258331440375,
+        "d": 0.362488365906066,
+        "LowerCI": 0.293722405379477,
+        "UpperCI": 0.450248475671047
+      },
+      "provenance_id": "provenance_1"
+    },
+    {
+      "accession": "GCF_964063395.1",
+      "source_sha256": "983f99fb0200eca82c0e8642d4de73d1a50f97d6f0f1a326edf65c2cba9c5de5",
+      "genome_sha256": "6cf0475eee6253fc3a1c76e328a7b7fe46d0f68c5e9f2eb53b9ade12a88ff344",
+      "artifact_sha256": {
+        "predicted_cds.fna": "2048fad4e48b6c55519cf0ebc6898c04c4d0c091c49db5f2b14be356aa1190e6",
+        "highly_expressed_ids.txt": "67397b2ec451bb28718f1f3012c9f6316c37db6339744b166e8d94b3db50845d",
+        "r_result.json": "c41d6613d2b3c2a5c64d82c7bf11fe9b5974f27eb72dba7ab7a852cf68240619",
+        "r_comparison.json": "1b2ec407a99c7ffabb431a5aff836aea477164a85bbba537c59fb1f242f11fbf",
+        "reference.json": "bd748222d87fbd9871eaa5551714e7358f2e3f07c407c1de579e5a17862a779e",
+        "reference.faa.gz": "06c62cc9d5cc8629029f70d711cd4b3cfe79030e0ba80268b6b68179c4e64669"
+      },
+      "r_statistics": {
+        "CUBHE": 0.746173662026253,
+        "GC": 0.394168681799665,
+        "GCdiv": 0.105831318200335,
+        "ConsistencyHE": 0.525770324016387,
+        "CUB": 0.548022515697965,
+        "CPB": -0.369262929939233,
+        "FilteredSequences": 122,
+        "nHE": 41,
+        "dCUB": -0.361574827041406,
+        "d": 1.72351850470504,
+        "LowerCI": 1.53205722021466,
+        "UpperCI": 1.94277711357725
+      },
+      "provenance_id": "provenance_1"
+    },
+    {
+      "accession": "GCF_964063405.1",
+      "source_sha256": "e4f77b57c1c1aee82dc90c28adbbda8b12076da731287e5662ba37f9d2f319aa",
+      "genome_sha256": "c860e43032318470ea21e445def1e74aa6498769de8ce93c68932676fb0173b1",
+      "artifact_sha256": {
+        "predicted_cds.fna": "eb09d97d2e057555bbf486d00ab3f5cd5d4b80e11fce3f1ae684adbc98931022",
+        "highly_expressed_ids.txt": "44d23ab7284944cea68e7b26f1339a68a06d049b4499703737bf4507bc7a3933",
+        "r_result.json": "fed91efc5943e44e7c15b1eaa75536d2c742b62365bfee3ec6cc0420c0cfced3",
+        "r_comparison.json": "95d3deb5291875686e3ae68447719306c260627bfcaf2a37fe6c64d08b3d1926",
+        "reference.json": "bd748222d87fbd9871eaa5551714e7358f2e3f07c407c1de579e5a17862a779e",
+        "reference.faa.gz": "06c62cc9d5cc8629029f70d711cd4b3cfe79030e0ba80268b6b68179c4e64669"
+      },
+      "r_statistics": {
+        "CUBHE": 0.844797092367882,
+        "GC": 0.384166112221951,
+        "GCdiv": 0.115833887778049,
+        "ConsistencyHE": 0.473235189551747,
+        "CUB": 0.537495021056064,
+        "CPB": -0.362054725222131,
+        "FilteredSequences": 113,
+        "nHE": 44,
+        "dCUB": -0.571730079858293,
+        "d": 0.392393119895718,
+        "LowerCI": 0.320739747328735,
+        "UpperCI": 0.482903530709621
+      },
+      "provenance_id": "provenance_1"
+    },
+    {
+      "accession": "GCF_964063415.1",
+      "source_sha256": "1b097ff9d5db90c0507001f09cebeb26f20210707781c3759f95208b4433891d",
+      "genome_sha256": "cde2a1449a721449a29a35a49f5b81f3ae4e6c40c4c2cc371c05309c56d28274",
+      "artifact_sha256": {
+        "predicted_cds.fna": "06df5b64ee22d1b7a996d0f4d6cacc2aace49eb90aa81f180892e0b739cbebb2",
+        "highly_expressed_ids.txt": "6e0049bd506178c688ceba4b375c7e14e93b1ec94344287027f379f944a58500",
+        "r_result.json": "895d9d76b7c62af34d26ae2df7b5a60adc21acf177c603337db27ea3a80e9a08",
+        "r_comparison.json": "78dc67740a2dbd1e7bcc5666a2ccc2a84f60ac7388eecb19d48db44cfcd1c59c",
+        "reference.json": "bd748222d87fbd9871eaa5551714e7358f2e3f07c407c1de579e5a17862a779e",
+        "reference.faa.gz": "06c62cc9d5cc8629029f70d711cd4b3cfe79030e0ba80268b6b68179c4e64669"
+      },
+      "r_statistics": {
+        "CUBHE": 0.818896890691162,
+        "GC": 0.416463348355755,
+        "GCdiv": 0.0835366516442445,
+        "ConsistencyHE": 0.453350330302136,
+        "CUB": 0.58128340528317,
+        "CPB": -0.390863678062088,
+        "FilteredSequences": 157,
+        "nHE": 42,
+        "dCUB": -0.408773901419463,
+        "d": 0.339689943705638,
+        "LowerCI": 0.269997843637505,
+        "UpperCI": 0.430677517873139
+      },
+      "provenance_id": "provenance_1"
+    },
+    {
+      "accession": "GCF_964063425.1",
+      "source_sha256": "6991fa4e3e8a8731e8c443d8539892392c6d2e17005fd74eb0b9d2df5857719f",
+      "genome_sha256": "14168bc77c92179223c7d5fe231f733850e5b241241d2977519a2bcd1bf42c3b",
+      "artifact_sha256": {
+        "predicted_cds.fna": "2be0f0e2d9b6eb73e1aebb51d3c4d04859ea8f299336951c2df4ef9fb4d25e0d",
+        "highly_expressed_ids.txt": "ca8b8e0e3e1adc4b74bd1076f8a28c0cd670816399cd90a1494e98bae41426b8",
+        "r_result.json": "97afc57e1da907d477869169e5f407fc3a127a6c9f1baf1379abc1691690241b",
+        "r_comparison.json": "bb21d36141c96a8398bab21d3d6d0afd5312c6fe92dec16c84c61f9f9a3faf33",
+        "reference.json": "bd748222d87fbd9871eaa5551714e7358f2e3f07c407c1de579e5a17862a779e",
+        "reference.faa.gz": "06c62cc9d5cc8629029f70d711cd4b3cfe79030e0ba80268b6b68179c4e64669"
+      },
+      "r_statistics": {
+        "CUBHE": 0.912003552677411,
+        "GC": 0.471437274158435,
+        "GCdiv": 0.0285627258415654,
+        "ConsistencyHE": 0.492490765457727,
+        "CUB": 0.579525963655356,
+        "CPB": -0.365454830008074,
+        "FilteredSequences": 282,
+        "nHE": 42,
+        "dCUB": -0.573706114778628,
+        "d": 0.32375070477754,
+        "LowerCI": 0.263388702845002,
+        "UpperCI": 0.400422070355503
+      },
+      "provenance_id": "provenance_1"
+    },
+    {
+      "accession": "GCF_964063445.1",
+      "source_sha256": "45b280ab5f2c37748ce5416bc54525c4f293031391609c4568dec2283d32ee5b",
+      "genome_sha256": "499b23fb433d4c4b5824ba51bac5147f9bf66ca18a49a89a5cd56425b97f0ea8",
+      "artifact_sha256": {
+        "predicted_cds.fna": "94014e151a6e7441e946ba40e03bc8364bf7d9c71f7221baddcf83408420ed0d",
+        "highly_expressed_ids.txt": "6eca0ab8eb633e434c35dea8c905c985547087e828995efb0b1cf7be43cda595",
+        "r_result.json": "19b20abd4d97a0434d9fbbc6b1275684b687dffe015efca81ccbab4e60673882",
+        "r_comparison.json": "82808c1918b18250c6af4fb1834b3191c21b05b7e5571e392d6d6442a2716d9d",
+        "reference.json": "bd748222d87fbd9871eaa5551714e7358f2e3f07c407c1de579e5a17862a779e",
+        "reference.faa.gz": "06c62cc9d5cc8629029f70d711cd4b3cfe79030e0ba80268b6b68179c4e64669"
+      },
+      "r_statistics": {
+        "CUBHE": 0.751370457448861,
+        "GC": 0.392208314788309,
+        "GCdiv": 0.107791685211691,
+        "ConsistencyHE": 0.525306784154406,
+        "CUB": 0.553361987651368,
+        "CPB": -0.371432169418215,
+        "FilteredSequences": 156,
+        "nHE": 41,
+        "dCUB": -0.357828102067326,
+        "d": 1.63188989344734,
+        "LowerCI": 1.44919115110526,
+        "UpperCI": 1.84135127589994
+      },
+      "provenance_id": "provenance_1"
+    },
+    {
+      "accession": "GCF_964063755.1",
+      "source_sha256": "25ed40f553b9bf072ee5e2e8beb32c832f9f7475de6daebf37380cd251f4e7da",
+      "genome_sha256": "86c110c5e08275a4c93ec50b92e53b2b40ad871268169639ddd8c4ff48dda29b",
+      "artifact_sha256": {
+        "predicted_cds.fna": "23b2cc60ae65a5ee362ad7d3d0e05ef6c9065323751781e809d890e97bca7f43",
+        "highly_expressed_ids.txt": "a2a9c0950c4cbbcc6d0f8058652c61e4133b0e41d5bb84fa39bffcfce641714e",
+        "r_result.json": "f5c698bb5843d6b979de82ce300080363301b47fd75350b4f9c1323535ed229e",
+        "r_comparison.json": "8c1e7e1408c19d09cf0830a5b1d83f7004db38ea62eafbd6366d82518136d9ef",
+        "reference.json": "bd748222d87fbd9871eaa5551714e7358f2e3f07c407c1de579e5a17862a779e",
+        "reference.faa.gz": "06c62cc9d5cc8629029f70d711cd4b3cfe79030e0ba80268b6b68179c4e64669"
+      },
+      "r_statistics": {
+        "CUBHE": 0.816412057880066,
+        "GC": 0.419759791631052,
+        "GCdiv": 0.0802402083689479,
+        "ConsistencyHE": 0.452344298618686,
+        "CUB": 0.581766768133904,
+        "CPB": -0.394341877596299,
+        "FilteredSequences": 124,
+        "nHE": 42,
+        "dCUB": -0.403332233119501,
+        "d": 0.33858209783966,
+        "LowerCI": 0.268589729307924,
+        "UpperCI": 0.430173974525006
+      },
+      "provenance_id": "provenance_1"
+    },
+    {
+      "accession": "GCF_964065095.1",
+      "source_sha256": "ab37ff5aca0430959502d617a6e45a572879b08e92d8e99dd3cc7c2cefff6464",
+      "genome_sha256": "cc16e2cf6ce789e4fafc6be39fc06fd9d4a6bf1bd01d7e35831cd53308128172",
+      "artifact_sha256": {
+        "predicted_cds.fna": "d359a71f3e79bf97fefd79a54c474df216773ca3e8945e1577b7cdbb38de3fce",
+        "highly_expressed_ids.txt": "88b26120d468972ecfbd640c709b30617249e7afd116c60e953eafee168c5f7e",
+        "r_result.json": "4587a1b86c2aee4ca2006da0bd9d3b6054674dd8d977a8fe099bca10b02b2991",
+        "r_comparison.json": "936a3bd4374ee1d0bdd5d58b6f9d5553a529f47919fe4cc936b49a0d47bee291",
+        "reference.json": "bd748222d87fbd9871eaa5551714e7358f2e3f07c407c1de579e5a17862a779e",
+        "reference.faa.gz": "06c62cc9d5cc8629029f70d711cd4b3cfe79030e0ba80268b6b68179c4e64669"
+      },
+      "r_statistics": {
+        "CUBHE": 0.831358678264172,
+        "GC": 0.451948978192292,
+        "GCdiv": 0.0480510218077081,
+        "ConsistencyHE": 0.503945336110472,
+        "CUB": 0.554791712608487,
+        "CPB": -0.373536874478773,
+        "FilteredSequences": 172,
+        "nHE": 41,
+        "dCUB": -0.498505942627258,
+        "d": 0.641607334953448,
+        "LowerCI": 0.545833998614847,
+        "UpperCI": 0.75704333912588
+      },
+      "provenance_id": "provenance_1"
+    },
+    {
+      "accession": "GCF_964065115.1",
+      "source_sha256": "3d20cdd7188f135fa7ef2b6d9a11a79d1865e05da5a556e9ee7a6faa4fdb27f9",
+      "genome_sha256": "e55b308fa5a1152ec9f1a3af9fa2133ded8885d1fd0b728906d6c8b007ba2009",
+      "artifact_sha256": {
+        "predicted_cds.fna": "2a50fa656d0447fff8867abf54d13fd899206a9eb5cc690a60ec7f2b669bb794",
+        "highly_expressed_ids.txt": "8f0d3dbbcc36f8c3da0bdc2a1ae9a284f0abd651695e36ef403d7bc47d91d5d7",
+        "r_result.json": "412bcf86d0673a472cb5bd14b92b5fd0e3b06eee26423577b37d6dc855411842",
+        "r_comparison.json": "db108bbab49ad2e2568a300c87c86a71a2b11df86d0c3d9aac9b699429e5b076",
+        "reference.json": "bd748222d87fbd9871eaa5551714e7358f2e3f07c407c1de579e5a17862a779e",
+        "reference.faa.gz": "06c62cc9d5cc8629029f70d711cd4b3cfe79030e0ba80268b6b68179c4e64669"
+      },
+      "r_statistics": {
+        "CUBHE": 0.843594148229064,
+        "GC": 0.468319519774133,
+        "GCdiv": 0.0316804802258673,
+        "ConsistencyHE": 0.52451895925917,
+        "CUB": 0.564587228219289,
+        "CPB": -0.360928304674155,
+        "FilteredSequences": 174,
+        "nHE": 42,
+        "dCUB": -0.494178589355917,
+        "d": 0.81128528251206,
+        "LowerCI": 0.695416918812843,
+        "UpperCI": 0.949714511692167
+      },
+      "provenance_id": "provenance_1"
+    },
+    {
+      "accession": "GCF_964065165.1",
+      "source_sha256": "da7807d8765a810a9023d4547447fda697892c158220d915f129ee15a53673fb",
+      "genome_sha256": "c65c568fe9c8d3c039bbd3d02ea0ffe05c168efe42d18676cb202517787b2774",
+      "artifact_sha256": {
+        "predicted_cds.fna": "189be81d5911dc0d9c0074bac3489dc33be51867b281f2f31c09d02b8edd41a2",
+        "highly_expressed_ids.txt": "286885c6bfc4b7ea3c093b10483d0b17751ccf590dca7de9845ceed596af5674",
+        "r_result.json": "d8dcf5e9ab12b996ef15aee1123202184b747454936d8aaacc1585da040c626a",
+        "r_comparison.json": "1410a8dca10379075e6f1861d2da9c3f4936845bf550163d5574c26c6efb2aa4",
+        "reference.json": "bd748222d87fbd9871eaa5551714e7358f2e3f07c407c1de579e5a17862a779e",
+        "reference.faa.gz": "06c62cc9d5cc8629029f70d711cd4b3cfe79030e0ba80268b6b68179c4e64669"
+      },
+      "r_statistics": {
+        "CUBHE": 0.825105024343898,
+        "GC": 0.48417736532969,
+        "GCdiv": 0.0158226346703104,
+        "ConsistencyHE": 0.509241366125992,
+        "CUB": 0.584549155747617,
+        "CPB": -0.350023788583963,
+        "FilteredSequences": 190,
+        "nHE": 42,
+        "dCUB": -0.411523763623641,
+        "d": 0.75900779653369,
+        "LowerCI": 0.651820331558522,
+        "UpperCI": 0.886787237034034
+      },
+      "provenance_id": "provenance_1"
+    },
+    {
+      "accession": "GCF_964065205.1",
+      "source_sha256": "3cc5a7017409305eddfb92f084f639f0ec8d1e6cca7134b6a692d6e082566be6",
+      "genome_sha256": "a80e3ef6468a8dbaf6ab5274cd86a653eddc678e5337df673681e851350890f7",
+      "artifact_sha256": {
+        "predicted_cds.fna": "526d12c4eaea69e582b64d6876d154575f39b87d6b1978e2c34d875facf7d9ee",
+        "highly_expressed_ids.txt": "6c139c7d240cd50bcbe018dd48af017f9a4d27bc78d1318cd0e099b5bd36cb11",
+        "r_result.json": "8e9b96250fe16676e90fa9c31b86a6da91fb267bfae84cacd9a27b66420901f5",
+        "r_comparison.json": "027a058948f8e391dd7aa8b734298a9b7f3d9e91a10533bb4b961fe8efc739d1",
+        "reference.json": "bd748222d87fbd9871eaa5551714e7358f2e3f07c407c1de579e5a17862a779e",
+        "reference.faa.gz": "06c62cc9d5cc8629029f70d711cd4b3cfe79030e0ba80268b6b68179c4e64669"
+      },
+      "r_statistics": {
+        "CUBHE": 0.710927776990388,
+        "GC": 0.470093276090705,
+        "GCdiv": 0.0299067239092951,
+        "ConsistencyHE": 0.513952070768301,
+        "CUB": 0.552781560831124,
+        "CPB": -0.35690834681564,
+        "FilteredSequences": 214,
+        "nHE": 43,
+        "dCUB": -0.286091699443604,
+        "d": 1.94905981765386,
+        "LowerCI": 1.73964513725903,
+        "UpperCI": 2.18774214451658
+      },
+      "provenance_id": "provenance_1"
+    },
+    {
+      "accession": "GCF_964065235.1",
+      "source_sha256": "09a23d1e8b1ede1f6161ebdfce67ee8e0476d92ff30eb6e815e5751a6db8d654",
+      "genome_sha256": "67aebae00f78a7fe225a96116d8f39d131ea34bb907033bb7f2fe2a10ed9b664",
+      "artifact_sha256": {
+        "predicted_cds.fna": "43d47d4d513d6329ede242c5126024a5020f41a7159d8f4878cc06944501b84b",
+        "highly_expressed_ids.txt": "8b115e4fc26220fdd6b109025f6b112e4a92a4e5ba3792004a69693ab009545d",
+        "r_result.json": "978e48316130530907d823b4f005cb554d20913199cec4e5d1db2371a83ed8a9",
+        "r_comparison.json": "e3b61c2c905752386557b17c96e535a2f2fe131c4b7c160a9677c090dca4131f",
+        "reference.json": "bd748222d87fbd9871eaa5551714e7358f2e3f07c407c1de579e5a17862a779e",
+        "reference.faa.gz": "06c62cc9d5cc8629029f70d711cd4b3cfe79030e0ba80268b6b68179c4e64669"
+      },
+      "r_statistics": {
+        "CUBHE": 0.815374679359879,
+        "GC": 0.394887533754254,
+        "GCdiv": 0.105112466245746,
+        "ConsistencyHE": 0.474156874911116,
+        "CUB": 0.542466978556497,
+        "CPB": -0.379410357732506,
+        "FilteredSequences": 134,
+        "nHE": 43,
+        "dCUB": -0.503086292053368,
+        "d": 0.468305079057314,
+        "LowerCI": 0.385794583981451,
+        "UpperCI": 0.571575757036306
+      },
+      "provenance_id": "provenance_1"
+    },
+    {
+      "accession": "GCF_964065245.1",
+      "source_sha256": "eb21d448194f7d9eb4c5758da1125785dba0782c34ce67efacb9360740491c3b",
+      "genome_sha256": "aed4d5b80c57df3167d695268a5b2444a686f51f30509d58d2c57aa39340050a",
+      "artifact_sha256": {
+        "predicted_cds.fna": "18a9baa61a59a3d41bf1bb718a59ee0a4846eac28f21229f7ead84845cbd7843",
+        "highly_expressed_ids.txt": "70ff6200a7ce3936feef2ff3a146367b3acba9745ff3bf89fcca849b71fcfe0a",
+        "r_result.json": "60a4036a3f9faf1f2d09df59ff2b4b3f7fe46bbd4ef97ca66996670168022543",
+        "r_comparison.json": "5b7fe5ed249b67369de3336e753bb043c5a66e0f133fb649f0edc9df899a7d6e",
+        "reference.json": "bd748222d87fbd9871eaa5551714e7358f2e3f07c407c1de579e5a17862a779e",
+        "reference.faa.gz": "06c62cc9d5cc8629029f70d711cd4b3cfe79030e0ba80268b6b68179c4e64669"
+      },
+      "r_statistics": {
+        "CUBHE": 0.830657978054176,
+        "GC": 0.456658966900617,
+        "GCdiv": 0.0433410330993831,
+        "ConsistencyHE": 0.487135387958068,
+        "CUB": 0.565062510453756,
+        "CPB": -0.363426476640971,
+        "FilteredSequences": 216,
+        "nHE": 42,
+        "dCUB": -0.470028470632642,
+        "d": 0.519595401154371,
+        "LowerCI": 0.434800506454462,
+        "UpperCI": 0.623793012346378
+      },
+      "provenance_id": "provenance_1"
+    },
+    {
+      "accession": "GCF_964065285.1",
+      "source_sha256": "967f9fb65735b9bf60fa905d688a1f8921b6d1af2c793446aa66cc66297ccea1",
+      "genome_sha256": "3b832e9270ede157cd6f7f76d50667f00ecc0641cccc72ade6e5622c96b2e41a",
+      "artifact_sha256": {
+        "predicted_cds.fna": "049c4e9c692533263f8bc86484342f0143f2d0b345c7726e45464ca7e234df07",
+        "highly_expressed_ids.txt": "8631d5ee4b5e12e768263d8bee78511207b146299488f018de18d904a36994e9",
+        "r_result.json": "61cf038e5985d051bbe4282f36795a38cc7d6b4fa4c2b5cfe11c5ad6617912d9",
+        "r_comparison.json": "c1cf3313a515b2a09a40b917989b9ba45ba35f5175c3a2b43a6a2bd33a866057",
+        "reference.json": "bd748222d87fbd9871eaa5551714e7358f2e3f07c407c1de579e5a17862a779e",
+        "reference.faa.gz": "06c62cc9d5cc8629029f70d711cd4b3cfe79030e0ba80268b6b68179c4e64669"
+      },
+      "r_statistics": {
+        "CUBHE": 0.857945368920658,
+        "GC": 0.468353197201723,
+        "GCdiv": 0.0316468027982768,
+        "ConsistencyHE": 0.526107315060913,
+        "CUB": 0.564999452016935,
+        "CPB": -0.364330433526319,
+        "FilteredSequences": 156,
+        "nHE": 42,
+        "dCUB": -0.518488851374926,
+        "d": 0.74284279637822,
+        "LowerCI": 0.632617961591091,
+        "UpperCI": 0.875535194286709
+      },
+      "provenance_id": "provenance_1"
+    },
+    {
+      "accession": "GCF_964065435.1",
+      "source_sha256": "8930c778bf12e34400685e078811d9a837e55401099fca7766a871ded63cd364",
+      "genome_sha256": "ec0b75a4c4cc33215bd7bdac684485cd22151659112178977b1e5e356e8a3343",
+      "artifact_sha256": {
+        "predicted_cds.fna": "773feac9897c35926567b76020d1908f167ec7cb7ecf9df914feda91f4ca2815",
+        "highly_expressed_ids.txt": "47fcf9c72c71e890c864da0b5c58fd692e73689b659ff4af34ce4e239b787bd7",
+        "r_result.json": "4a2eea40cc37a7f4277e0ec4ce72b036104c1abfc0ada4258b8c68a149beb3ff",
+        "r_comparison.json": "ebe4fad20ef4f0dfd65683d6379aaedf2343a3739e9be054df53523a57600f8f",
+        "reference.json": "bd748222d87fbd9871eaa5551714e7358f2e3f07c407c1de579e5a17862a779e",
+        "reference.faa.gz": "06c62cc9d5cc8629029f70d711cd4b3cfe79030e0ba80268b6b68179c4e64669"
+      },
+      "r_statistics": {
+        "CUBHE": 0.754318677053359,
+        "GC": 0.393187188363831,
+        "GCdiv": 0.106812811636169,
+        "ConsistencyHE": 0.525827219953977,
+        "CUB": 0.55024842036368,
+        "CPB": -0.368838207448851,
+        "FilteredSequences": 132,
+        "nHE": 41,
+        "dCUB": -0.370869318543072,
+        "d": 1.616407465607,
+        "LowerCI": 1.43391192209876,
+        "UpperCI": 1.82589527258248
+      },
+      "provenance_id": "provenance_1"
+    },
+    {
+      "accession": "GCF_964065445.1",
+      "source_sha256": "9a5edb670820535eeb5e67901548aa053b499cd2ea74b3f50fcfde6149d418db",
+      "genome_sha256": "a5e8cf9de3a417b770d00d003cdc0aea8f8e7d405598006e9f957533d1cda6af",
+      "artifact_sha256": {
+        "predicted_cds.fna": "db486a8a3f6f79ac276f62b69d6e330c4adfd638bf97cfd56ff962a68667538b",
+        "highly_expressed_ids.txt": "9f19027e0c3989a527a1b653f411a5db7a0983c80b1a4159fa9fd8ab237b8da5",
+        "r_result.json": "44042004706e28bb57514dbc06290e380794bf728d6bda7b97d3009fcab0cd4a",
+        "r_comparison.json": "f2bb419618dc28f4f628afee6324b79b338f291497ac28c34c04710b9ad4c967",
+        "reference.json": "bd748222d87fbd9871eaa5551714e7358f2e3f07c407c1de579e5a17862a779e",
+        "reference.faa.gz": "06c62cc9d5cc8629029f70d711cd4b3cfe79030e0ba80268b6b68179c4e64669"
+      },
+      "r_statistics": {
+        "CUBHE": 0.829798195537495,
+        "GC": 0.455184762639215,
+        "GCdiv": 0.0448152373607849,
+        "ConsistencyHE": 0.48779330129296,
+        "CUB": 0.567972478930223,
+        "CPB": -0.362371388371782,
+        "FilteredSequences": 286,
+        "nHE": 42,
+        "dCUB": -0.460983104499045,
+        "d": 0.528522757647348,
+        "LowerCI": 0.442863697668361,
+        "UpperCI": 0.633617134418575
+      },
+      "provenance_id": "provenance_1"
+    },
+    {
+      "accession": "GCF_964065465.1",
+      "source_sha256": "85e0c9160dd06394a443768518892773554cb3646c2eee2c30182e27bfa81178",
+      "genome_sha256": "acd8830bf53cc9967dfd37b7b8aa1bccc962dbc4c23408e0a34756c7f3acdf2c",
+      "artifact_sha256": {
+        "predicted_cds.fna": "93d4baffa26599cd5d0c26b8409cfcad4831843d15d29462544754a032b4498a",
+        "highly_expressed_ids.txt": "bd010282c465ebc06e557473f060ea1cf503f560cf88d40f77634f737157cd19",
+        "r_result.json": "b022a485a4642135e416aeaed78baefb01ddc32133d8378da2e5dc5f1e66a01c",
+        "r_comparison.json": "53270f506798c8b445ba8f8690bd4a8f096e26c7f89bc46c3690ad5eb7a75b22",
+        "reference.json": "bd748222d87fbd9871eaa5551714e7358f2e3f07c407c1de579e5a17862a779e",
+        "reference.faa.gz": "06c62cc9d5cc8629029f70d711cd4b3cfe79030e0ba80268b6b68179c4e64669"
+      },
+      "r_statistics": {
+        "CUBHE": 0.704771403789759,
+        "GC": 0.408845472604285,
+        "GCdiv": 0.0911545273957148,
+        "ConsistencyHE": 0.532777541271096,
+        "CUB": 0.544062049601169,
+        "CPB": -0.399882796052055,
+        "FilteredSequences": 129,
+        "nHE": 42,
+        "dCUB": -0.295387914496884,
+        "d": 2.55328661663257,
+        "LowerCI": 2.26513724678871,
+        "UpperCI": 2.88403449214386
+      },
+      "provenance_id": "provenance_1"
+    },
+    {
+      "accession": "GCF_964068245.1",
+      "source_sha256": "5cfec22bb17466f3219034a4332b5183901157f14835847b7aa73cfc2b54b4aa",
+      "genome_sha256": "70086111673fe46376605400eaf9a5120d13e5cbcd551ea9387bfa4d494c58ab",
+      "artifact_sha256": {
+        "predicted_cds.fna": "5cc6d37795535300b27c3c1f6739141b8a2df193d6dd81b48762a2dc9220df55",
+        "highly_expressed_ids.txt": "175b9222f95fa8b5503d0900ac404d54cb656f13f3148aa1fc0df6df82c47c73",
+        "r_result.json": "93ebc460011266e59a26833ea157dd250a398e38b3e1617799962209cbcc9d96",
+        "r_comparison.json": "413f83d080cda7973beeb98f067fef5bcf51609099235d5e76c371acb07e3d33",
+        "reference.json": "bd748222d87fbd9871eaa5551714e7358f2e3f07c407c1de579e5a17862a779e",
+        "reference.faa.gz": "06c62cc9d5cc8629029f70d711cd4b3cfe79030e0ba80268b6b68179c4e64669"
+      },
+      "r_statistics": {
+        "CUBHE": 0.77958670126361,
+        "GC": 0.427470643563732,
+        "GCdiv": 0.0725293564362681,
+        "ConsistencyHE": 0.481749358625093,
+        "CUB": 0.560937343440108,
+        "CPB": -0.392709038426371,
+        "FilteredSequences": 168,
+        "nHE": 41,
+        "dCUB": -0.389792835831847,
+        "d": 0.650162102859933,
+        "LowerCI": 0.546244412314138,
+        "UpperCI": 0.777259718850313
+      },
+      "provenance_id": "provenance_1"
+    },
+    {
+      "accession": "GCF_964069135.1",
+      "source_sha256": "530512062ac7cd1dcf6991b3a3c15af417a6d16a5a4adcbd2ce473ab096ed845",
+      "genome_sha256": "4ba143ddb5341946e6fac16ffe1a72ba21cf41e473e33bf521fa2c658810e2f2",
+      "artifact_sha256": {
+        "predicted_cds.fna": "9836f834b47eee56b4179b4d3461604ea53d02f24ff5b5c34ccb151ba732c551",
+        "highly_expressed_ids.txt": "0caf9edda2683e15e0c4c408894c7f18bcbaceff505021a4e6eab274f681fe8b",
+        "r_result.json": "6243fff158412f1942cb68a5697693825867b9725685e966d86281c46d449765",
+        "r_comparison.json": "ec332e7c0f65a4950994c974f22dd1a8cdeb82433dceb2340aefcd485bc5079d",
+        "reference.json": "bd748222d87fbd9871eaa5551714e7358f2e3f07c407c1de579e5a17862a779e",
+        "reference.faa.gz": "06c62cc9d5cc8629029f70d711cd4b3cfe79030e0ba80268b6b68179c4e64669"
+      },
+      "r_statistics": {
+        "CUBHE": 0.762365840694434,
+        "GC": 0.541547716489323,
+        "GCdiv": 0.0415477164893228,
+        "ConsistencyHE": 0.523695634630692,
+        "CUB": 0.556557054762316,
+        "CPB": -0.318848492875914,
+        "FilteredSequences": 180,
+        "nHE": 41,
+        "dCUB": -0.369789196221779,
+        "d": 1.63762464562014,
+        "LowerCI": 1.42226296532205,
+        "UpperCI": 1.89101367658337
+      },
+      "provenance_id": "provenance_1"
+    },
+    {
+      "accession": "GCF_964084875.1",
+      "source_sha256": "b2ee7bc83fd56cdd6b0f4e744c80d5afe64e7bc029460403f07233af7fb27786",
+      "genome_sha256": "2d0294b459b51deac4c57eb71ad7374b5be49a742538d860009e5dc7659a4077",
+      "artifact_sha256": {
+        "predicted_cds.fna": "2185d6e2ea135494d58420c72dffd14847442106723c1bb89439dd140cdf10ea",
+        "highly_expressed_ids.txt": "ea0420d1605568a8e99b3d82e88176ce21c91dc127d6ee174c758b2ffd6d0c6f",
+        "r_result.json": "0d0e5cc32afb493fff0fd79a4dc7ac985769ac3323945c05abdfa35f1fca6245",
+        "r_comparison.json": "2e1def60b6a7827ab98b5add6d91e7b8a3a4922bfc4af12c1e731751fbcfc692",
+        "reference.json": "bd748222d87fbd9871eaa5551714e7358f2e3f07c407c1de579e5a17862a779e",
+        "reference.faa.gz": "06c62cc9d5cc8629029f70d711cd4b3cfe79030e0ba80268b6b68179c4e64669"
+      },
+      "r_statistics": {
+        "CUBHE": 0.812031241049124,
+        "GC": 0.378703792456558,
+        "GCdiv": 0.121296207543442,
+        "ConsistencyHE": 0.477165091491725,
+        "CUB": 0.540943901936279,
+        "CPB": -0.374095833978627,
+        "FilteredSequences": 114,
+        "nHE": 43,
+        "dCUB": -0.501137619155153,
+        "d": 0.504270559535538,
+        "LowerCI": 0.418314069063802,
+        "UpperCI": 0.610981419842361
+      },
+      "provenance_id": "provenance_1"
+    },
+    {
+      "accession": "GCF_964084915.1",
+      "source_sha256": "2b8af217e5b02b23baa8fc57aa8ad30b943f619fccb1fe18d46098f3bd7ffd14",
+      "genome_sha256": "94404acdbbfd2ec95954b37b9291695f2e46f447f8b8c1e1d1097bded8552f77",
+      "artifact_sha256": {
+        "predicted_cds.fna": "42170fd88524e1626ca73749a3500d0d320352d168f982e4264e42e530fdfbbe",
+        "highly_expressed_ids.txt": "ed3812e02c1c9d4887aa6759b23c8c106f622c2bc0719ff1eb11537f1f6e39fc",
+        "r_result.json": "591e4182aec50541a86eff652daec63236fd13fff094df96f9b128184e4c1e21",
+        "r_comparison.json": "2f5f60aacba26048390e0fea075b761a2bc35d5a08279503aaea39be831a5e71",
+        "reference.json": "bd748222d87fbd9871eaa5551714e7358f2e3f07c407c1de579e5a17862a779e",
+        "reference.faa.gz": "06c62cc9d5cc8629029f70d711cd4b3cfe79030e0ba80268b6b68179c4e64669"
+      },
+      "r_statistics": {
+        "CUBHE": 0.827551678495967,
+        "GC": 0.457798913216347,
+        "GCdiv": 0.0422010867836525,
+        "ConsistencyHE": 0.485837840680299,
+        "CUB": 0.564517780628547,
+        "CPB": -0.363882007388644,
+        "FilteredSequences": 201,
+        "nHE": 42,
+        "dCUB": -0.4659443987301,
+        "d": 0.52093524105066,
+        "LowerCI": 0.435702948449412,
+        "UpperCI": 0.625731990609321
+      },
+      "provenance_id": "provenance_1"
+    }
+  ]
+}

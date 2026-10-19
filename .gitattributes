@@ -1,0 +1,9 @@
+# Use consistent source-text line endings on every platform.
+* text=auto eol=lf
+*.gz -text
+
+# These archived evidence files are linked by exact-byte SHA256 digests.
+# Preserve the original bytes, including line endings, through Git checkouts.
+/validation/*.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/validation/*.csv -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/tests/data/folder_growth_reference.json -text

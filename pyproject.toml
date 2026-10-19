@@ -1,0 +1,72 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "grodon2-py"
+version = "0.2.0"
+description = "Native Python implementation of gRodon microbial trait inference"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{name = "Daniel Garza"}]
+keywords = ["bioinformatics", "codon-usage", "grodon", "microbial-ecology"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+dependencies = ["numpy>=1.26", "scipy>=1.11", "pandas>=2.1", "biopython>=1.83"]
+
+[project.urls]
+Repository = "https://github.com/danielriosgarza/gRodon2_py"
+Documentation = "https://github.com/danielriosgarza/gRodon2_py/blob/main/README.md"
+Issues = "https://github.com/danielriosgarza/gRodon2_py/issues"
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pytest-cov>=5", "ruff>=0.9", "mypy>=1.13", "build>=1.2", "hatchling>=1.25"]
+reference = ["rdata>=1.0"]
+genome = ["pyrodigal==3.7.1"]
+
+[project.scripts]
+grodon = "grodon.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/grodon"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/src", "/tests", "/scripts", "/examples", "/docs", "/README.md",
+    "/LICENSE", "/NOTICE", "/CITATION.cff", "/pyproject.toml", "/uv.lock",
+    "/.github", "/.gitattributes", "/.gitignore", "/validation/README.md",
+    "/validation/pipeline_reproduction.json",
+    "/validation/test_genomes_inputs_manifest.json",
+    "/validation/test_genomes_comparison.json",
+    "/validation/test_genomes_comparison.csv",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra --strict-markers"
+markers = ["reference: requires a local R reference installation", "genome_integration: requires a local genome and BLASTP installation"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I", "UP", "B"]
+
+[tool.mypy]
+python_version = "3.11"
+ignore_missing_imports = true
+check_untyped_defs = true
+files = ["src/grodon"]
+
+[tool.coverage.run]
+source = ["grodon"]
+branch = true
