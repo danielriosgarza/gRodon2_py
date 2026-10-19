@@ -8,6 +8,18 @@ needed for optional direct R comparisons and reference-test fixtures.
 This is an independent port, with attribution to the original gRodon authors.
 The source reference is revision `4b13053e7f49ca99bceeee36940f5e820c5b0c32`.
 
+## Documentation
+
+- [Python API reference](docs/API.md): signatures, parameters, defaults,
+  return values, exceptions, and examples for prediction, genome processing,
+  sequence input, and codon statistics.
+- [Models and fitting](docs/API_FITTING.md): fitted regressions, model inspection,
+  Box-Cox transforms, training, and batch statistics.
+- [Copiotrophy API](docs/API_COPIOTROPHY.md): fitting, scoring, and storing IoC models.
+- [Low-level codon API](docs/API_CODON.md): count matrices, metrics, and codon-pair bias.
+- [Genome workflow](docs/GENOME_PIPELINE.md) and
+  [R/Python benchmarks](docs/TEST_GENOMES_VALIDATION.md): complete reproducible runs.
+
 ## Install
 
 Requires Python 3.11 or newer. From this checkout:
